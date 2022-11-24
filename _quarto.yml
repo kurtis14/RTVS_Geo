@@ -3,12 +3,11 @@ project:
   output-dir: docs
 
 website:
-  title: "RTVS_Geo"
+  title: "RTVS Geography Extras"
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: Main
 
 format:
   html:
