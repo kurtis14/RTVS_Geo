@@ -1,11 +1,11 @@
 ---
-title: "Main - Title TBD"
+title: "Overview"
 ---
 
-This is a Quarto website.
+## Purpose
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+How can we use publicly available data - from different sources like Stats Canada or the BC provincial government - to support the evaluation of RTVS?
 
-```{r}
-seq(1, 100, 2)
-```
+### Goals
+
+Using Community Health Service Area (CHSA) geography, find the distance of each CHSA to the nearest hospital emergency department (ED).

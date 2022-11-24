@@ -7,13 +7,17 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Main
+        text: Overview
+      - href: chsa.qmd
+        text: CHSA
 
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
+    code-fold: true
+    code-tools: true
+    code-link: true
 
 editor: source
-
