@@ -3,9 +3,7 @@ title: "CHSA"
 
 editor_options: 
   chunk_output_type: console
-  
-execute: 
-  cache: true
+
 ---
 
 ```{r}
@@ -66,7 +64,7 @@ chsa_labels <- sprintf("%s (%s)", chsa$CHSA_Title, chsa$HA_Name) %>%
 
 ### plot CHSA shapes plus hospital coordinates
 leaflet() %>%
-  addTiles() %>% 
+  addTiles() %>%
   addProviderTiles(providers$CartoDB.Positron) %>%
   addPolygons(data = chsa,
               fillColor = ~chsa_pal(HA_ID),
@@ -104,7 +102,7 @@ chsa %>%
 
 ```
 
-## CHSA Distance Correlations
+## CHSA to Hospital Distances
 
 ```{r}
 #| label: fig-correlations
