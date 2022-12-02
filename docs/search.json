@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Overview",
-    "section": "",
-    "text": "How can we use publicly available data - from different sources like Stats Canada or the BC provincial government - to support the evaluation of RTVS?\n\n\nUsing Community Health Service Area (CHSA) geography, find the distance of each CHSA to the nearest hospital emergency department (ED)."
-  },
-  {
     "objectID": "chsa.html",
     "href": "chsa.html",
     "title": "CHSA",
@@ -18,14 +11,7 @@
     "href": "chsa.html#interactive-map",
     "title": "CHSA",
     "section": "Interactive Map",
-    "text": "Interactive Map\n\nCode### data prep\n\n# remove extra row for surrey memorial pediatric unit\nhosp <- hosp %>% group_by(Facility) %>% slice(1) %>% ungroup()\n\n# labels for leaflet mapping\nhosp_labs <- sprintf(\"%s\", hosp$Facility) %>% lapply(htmltools::HTML)\n\n# add leaflet colour palette based on health authority\nchsa_pal <- colorFactor('RdYlBu', chsa$HA_ID)\n\n# labels leaflet for mapping\nchsa_labels <- sprintf(\"%s (%s)\", chsa$CHSA_Title, chsa$HA_Name) %>% \n  lapply(htmltools::HTML)\n\n### plot CHSA shapes plus hospital coordinates\n# leaflet() %>%\n#   addTiles() %>% \n#   addProviderTiles(providers$CartoDB.Positron) %>%\n#   addPolygons(data = chsa,\n#               fillColor = ~chsa_pal(HA_ID),\n#               stroke = T, weight = 1,\n#               opacity = 10, color = \"#666\", dashArray = \"1\", fillOpacity = 0.1,\n#               label = chsa_labels,\n#               highlight = highlightOptions(\n#                 weight = 1.5, color = \"black\", dashArray = \"\",fillOpacity = 0.3,\n#                 bringToFront = F)\n#               ) %>%\n#   ## add circles after polygons so that they are plotted on top\n#   addCircles(data = hosp, ~LONGITUDE, ~LATITUDE,\n#              label = ~hosp_labs, popup = ~hosp_labs,\n#              opacity = 1, radius = 10, stroke = T,\n#              highlightOptions = highlightOptions(bringToFront = T)\n#              )\n\n\nCHSA Table\n\nCodechsa %>% \n  select(CHSA_Name, HA_Name, CHSA_Pop16, CHSA_UR_Cl) %>% \n  as_tibble() %>% \n  select(-geometry) %>% \n  datatable(filter = 'top')\n\n\n\n\n\nCode# distances %>% \n#   select(CHSA_Name, Facility, distance, duration, HA_Name, CHSA_UR_Cl) %>% \n#   datatable(., filter = 'top')"
-  },
-  {
-    "objectID": "chsa.html#chsa-distance-correlations",
-    "href": "chsa.html#chsa-distance-correlations",
-    "title": "CHSA",
-    "section": "CHSA Distance Correlations",
-    "text": "CHSA Distance Correlations\n\nCode# # correlations - dist v. dur, dist v. CHSA pop/area\n# distances %>% \n#   select(HA_Name, duration, distance, dist.hav, CHSA_Pop16, CHSA_Area) %>% \n#   mutate(CHSA_dens = CHSA_Pop16 / CHSA_Area) %>% \n#   ggpairs(columns = 2:7, mapping = aes(color = HA_Name),\n#           diag = list(continuous = wrap('densityDiag', alpha = 0.3)),\n#           lower = list(continuous = wrap(\"smooth\", alpha = 0.3, size = 0.1, se = F)))"
+    "text": "Interactive Map\n\nCode### data prep\n\n# remove extra row for surrey memorial pediatric unit\nhosp <- hosp %>% group_by(Facility) %>% slice(1) %>% ungroup()\n\n# labels for leaflet mapping\nhosp_labs <- sprintf(\"%s\", hosp$Facility) %>% lapply(htmltools::HTML)\n\n# add leaflet colour palette based on health authority\nchsa_pal <- colorFactor('RdYlBu', chsa$HA_ID)\n\n# labels leaflet for mapping\nchsa_labels <- sprintf(\"%s (%s)\", chsa$CHSA_Title, chsa$HA_Name) %>% \n  lapply(htmltools::HTML)\n\n### plot CHSA shapes plus hospitals\n\nleaflet() %>%\n  addTiles() %>%\n  addProviderTiles(providers$CartoDB.Positron) %>%\n  ## some arguments are not working...\n  # addPolygons(data = chsa,\n  #             fillColor = ~chsa_pal(HA_ID),\n  #             stroke = T, weight = 1,\n  #             opacity = 10, color = \"#666\", dashArray = \"1\", fillOpacity = 0.1,\n  #             label = chsa_labels,\n  #             highlight = highlightOptions(\n  #               weight = 1.5, color = \"black\", dashArray = \"\",fillOpacity = 0.3,\n  #               bringToFront = F)\n  #             ) %>%\n  ## add circles after polygons so that they are plotted on top\n  addCircles(data = hosp, ~LONGITUDE, ~LATITUDE,\n             label = ~hosp_labs, popup = ~hosp_labs,\n             opacity = 1, radius = 10, stroke = T,\n             highlightOptions = highlightOptions(bringToFront = T)\n             )\n\n\nFigure 2: CHSA and hospital map\n\n\n\nCHSA Table\n\nCodechsa %>% \n  select(CHSA_Name, HA_Name, CHSA_Pop16, CHSA_UR_Cl) %>% \n  as_tibble() %>% \n  select(-geometry) %>% \n  datatable(filter = 'top')\n\n\n\n\n\nCode# distances %>% \n#   select(CHSA_Name, Facility, distance, duration, HA_Name, CHSA_UR_Cl) %>% \n#   datatable(., filter = 'top')"
   },
   {
     "objectID": "chsa.html#chsa-to-hospital-distances",
@@ -33,5 +19,12 @@
     "title": "CHSA",
     "section": "CHSA to Hospital Distances",
     "text": "CHSA to Hospital Distances\n\nCode# # correlations - dist v. dur, dist v. CHSA pop/area\n# distances %>% \n#   select(HA_Name, duration, distance, dist.hav, CHSA_Pop16, CHSA_Area) %>% \n#   mutate(CHSA_dens = CHSA_Pop16 / CHSA_Area) %>% \n#   ggpairs(columns = 2:7, mapping = aes(color = HA_Name),\n#           diag = list(continuous = wrap('densityDiag', alpha = 0.3)),\n#           lower = list(continuous = wrap(\"smooth\", alpha = 0.3, size = 0.1, se = F)))"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Overview",
+    "section": "",
+    "text": "How can we use publicly available data - from different sources like Stats Canada or the BC provincial government - to support the evaluation of RTVS?\n\n\nUsing Community Health Service Area (CHSA) geography, find the distance of each CHSA to the nearest hospital emergency department (ED)."
   }
 ]

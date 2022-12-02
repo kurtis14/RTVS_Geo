@@ -1,9 +1,5 @@
 ---
 title: "CHSA"
-
-editor_options: 
-  chunk_output_type: console
-
 ---
 
 ```{r}
@@ -62,19 +58,21 @@ chsa_pal <- colorFactor('RdYlBu', chsa$HA_ID)
 chsa_labels <- sprintf("%s (%s)", chsa$CHSA_Title, chsa$HA_Name) %>% 
   lapply(htmltools::HTML)
 
-### plot CHSA shapes plus hospital coordinates
+### plot CHSA shapes plus hospitals
+
 leaflet() %>%
   addTiles() %>%
   addProviderTiles(providers$CartoDB.Positron) %>%
-  addPolygons(data = chsa,
-              fillColor = ~chsa_pal(HA_ID),
-              stroke = T, weight = 1,
-              opacity = 10, color = "#666", dashArray = "1", fillOpacity = 0.1,
-              label = chsa_labels,
-              highlight = highlightOptions(
-                weight = 1.5, color = "black", dashArray = "",fillOpacity = 0.3,
-                bringToFront = F)
-              ) %>%
+  ## some arguments are not working...
+  # addPolygons(data = chsa,
+  #             fillColor = ~chsa_pal(HA_ID),
+  #             stroke = T, weight = 1,
+  #             opacity = 10, color = "#666", dashArray = "1", fillOpacity = 0.1,
+  #             label = chsa_labels,
+  #             highlight = highlightOptions(
+  #               weight = 1.5, color = "black", dashArray = "",fillOpacity = 0.3,
+  #               bringToFront = F)
+  #             ) %>%
   ## add circles after polygons so that they are plotted on top
   addCircles(data = hosp, ~LONGITUDE, ~LATITUDE,
              label = ~hosp_labs, popup = ~hosp_labs,
