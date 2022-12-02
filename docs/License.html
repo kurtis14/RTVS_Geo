@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.262">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>RTVS Geography Extras – license</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">RTVS Geography Extras</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">
+ <span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./chsa.html">
+ <span class="menu-text">CHSA</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<pre><code>                GNU GENERAL PUBLIC LICENSE
+                   Version 3, 29 June 2007</code></pre>
+<p>Copyright (C) 2007 Free Software Foundation, Inc.&nbsp;<a href="https://fsf.org/" class="uri">https://fsf.org/</a> Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.</p>
+<pre><code>                        Preamble</code></pre>
+<p>The GNU General Public License is a free, copyleft license for software and other kinds of works.</p>
+<p>The licenses for most software and other practical works are designed to take away your freedom to share and change the works. By contrast, the GNU General Public License is intended to guarantee your freedom to share and change all versions of a program–to make sure it remains free software for all its users. We, the Free Software Foundation, use the GNU General Public License for most of our software; it applies also to any other work released this way by its authors. You can apply it to your programs, too.</p>
+<p>When we speak of free software, we are referring to freedom, not price. Our General Public Licenses are designed to make sure that you have the freedom to distribute copies of free software (and charge for them if you wish), that you receive source code or can get it if you want it, that you can change the software or use pieces of it in new free programs, and that you know you can do these things.</p>
+<p>To protect your rights, we need to prevent others from denying you these rights or asking you to surrender the rights. Therefore, you have certain responsibilities if you distribute copies of the software, or if you modify it: responsibilities to respect the freedom of others.</p>
+<p>For example, if you distribute copies of such a program, whether gratis or for a fee, you must pass on to the recipients the same freedoms that you received. You must make sure that they, too, receive or can get the source code. And you must show them these terms so they know their rights.</p>
+<p>Developers that use the GNU GPL protect your rights with two steps: (1) assert copyright on the software, and (2) offer you this License giving you legal permission to copy, distribute and/or modify it.</p>
+<p>For the developers’ and authors’ protection, the GPL clearly explains that there is no warranty for this free software. For both users’ and authors’ sake, the GPL requires that modified versions be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions.</p>
+<p>Some devices are designed to deny users access to install or run modified versions of the software inside them, although the manufacturer can do so. This is fundamentally incompatible with the aim of protecting users’ freedom to change the software. The systematic pattern of such abuse occurs in the area of products for individuals to use, which is precisely where it is most unacceptable. Therefore, we have designed this version of the GPL to prohibit the practice for those products. If such problems arise substantially in other domains, we stand ready to extend this provision to those domains in future versions of the GPL, as needed to protect the freedom of users.</p>
+<p>Finally, every program is threatened constantly by software patents. States should not allow patents to restrict development and use of software on general-purpose computers, but in those that do, we wish to avoid the special danger that patents applied to a free program could make it effectively proprietary. To prevent this, the GPL assures that patents cannot be used to render the program non-free.</p>
+<p>The precise terms and conditions for copying, distribution and modification follow.</p>
+<pre><code>                   TERMS AND CONDITIONS</code></pre>
+<ol start="0" type="1">
+<li>Definitions.</li>
+</ol>
+<p>“This License” refers to version 3 of the GNU General Public License.</p>
+<p>“Copyright” also means copyright-like laws that apply to other kinds of works, such as semiconductor masks.</p>
+<p>“The Program” refers to any copyrightable work licensed under this License. Each licensee is addressed as “you”. “Licensees” and “recipients” may be individuals or organizations.</p>
+<p>To “modify” a work means to copy from or adapt all or part of the work in a fashion requiring copyright permission, other than the making of an exact copy. The resulting work is called a “modified version” of the earlier work or a work “based on” the earlier work.</p>
+<p>A “covered work” means either the unmodified Program or a work based on the Program.</p>
+<p>To “propagate” a work means to do anything with it that, without permission, would make you directly or secondarily liable for infringement under applicable copyright law, except executing it on a computer or modifying a private copy. Propagation includes copying, distribution (with or without modification), making available to the public, and in some countries other activities as well.</p>
+<p>To “convey” a work means any kind of propagation that enables other parties to make or receive copies. Mere interaction with a user through a computer network, with no transfer of a copy, is not conveying.</p>
+<p>An interactive user interface displays “Appropriate Legal Notices” to the extent that it includes a convenient and prominently visible feature that (1) displays an appropriate copyright notice, and (2) tells the user that there is no warranty for the work (except to the extent that warranties are provided), that licensees may convey the work under this License, and how to view a copy of this License. If the interface presents a list of user commands or options, such as a menu, a prominent item in the list meets this criterion.</p>
+<ol type="1">
+<li>Source Code.</li>
+</ol>
+<p>The “source code” for a work means the preferred form of the work for making modifications to it. “Object code” means any non-source form of a work.</p>
+<p>A “Standard Interface” means an interface that either is an official standard defined by a recognized standards body, or, in the case of interfaces specified for a particular programming language, one that is widely used among developers working in that language.</p>
+<p>The “System Libraries” of an executable work include anything, other than the work as a whole, that (a) is included in the normal form of packaging a Major Component, but which is not part of that Major Component, and (b) serves only to enable use of the work with that Major Component, or to implement a Standard Interface for which an implementation is available to the public in source code form. A “Major Component”, in this context, means a major essential component (kernel, window system, and so on) of the specific operating system (if any) on which the executable work runs, or a compiler used to produce the work, or an object code interpreter used to run it.</p>
+<p>The “Corresponding Source” for a work in object code form means all the source code needed to generate, install, and (for an executable work) run the object code and to modify the work, including scripts to control those activities. However, it does not include the work’s System Libraries, or general-purpose tools or generally available free programs which are used unmodified in performing those activities but which are not part of the work. For example, Corresponding Source includes interface definition files associated with source files for the work, and the source code for shared libraries and dynamically linked subprograms that the work is specifically designed to require, such as by intimate data communication or control flow between those subprograms and other parts of the work.</p>
+<p>The Corresponding Source need not include anything that users can regenerate automatically from other parts of the Corresponding Source.</p>
+<p>The Corresponding Source for a work in source code form is that same work.</p>
+<ol start="2" type="1">
+<li>Basic Permissions.</li>
+</ol>
+<p>All rights granted under this License are granted for the term of copyright on the Program, and are irrevocable provided the stated conditions are met. This License explicitly affirms your unlimited permission to run the unmodified Program. The output from running a covered work is covered by this License only if the output, given its content, constitutes a covered work. This License acknowledges your rights of fair use or other equivalent, as provided by copyright law.</p>
+<p>You may make, run and propagate covered works that you do not convey, without conditions so long as your license otherwise remains in force. You may convey covered works to others for the sole purpose of having them make modifications exclusively for you, or provide you with facilities for running those works, provided that you comply with the terms of this License in conveying all material for which you do not control copyright. Those thus making or running the covered works for you must do so exclusively on your behalf, under your direction and control, on terms that prohibit them from making any copies of your copyrighted material outside their relationship with you.</p>
+<p>Conveying under any other circumstances is permitted solely under the conditions stated below. Sublicensing is not allowed; section 10 makes it unnecessary.</p>
+<ol start="3" type="1">
+<li>Protecting Users’ Legal Rights From Anti-Circumvention Law.</li>
+</ol>
+<p>No covered work shall be deemed part of an effective technological measure under any applicable law fulfilling obligations under article 11 of the WIPO copyright treaty adopted on 20 December 1996, or similar laws prohibiting or restricting circumvention of such measures.</p>
+<p>When you convey a covered work, you waive any legal power to forbid circumvention of technological measures to the extent such circumvention is effected by exercising rights under this License with respect to the covered work, and you disclaim any intention to limit operation or modification of the work as a means of enforcing, against the work’s users, your or third parties’ legal rights to forbid circumvention of technological measures.</p>
+<ol start="4" type="1">
+<li>Conveying Verbatim Copies.</li>
+</ol>
+<p>You may convey verbatim copies of the Program’s source code as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice; keep intact all notices stating that this License and any non-permissive terms added in accord with section 7 apply to the code; keep intact all notices of the absence of any warranty; and give all recipients a copy of this License along with the Program.</p>
+<p>You may charge any price or no price for each copy that you convey, and you may offer support or warranty protection for a fee.</p>
+<ol start="5" type="1">
+<li>Conveying Modified Source Versions.</li>
+</ol>
+<p>You may convey a work based on the Program, or the modifications to produce it from the Program, in the form of source code under the terms of section 4, provided that you also meet all of these conditions:</p>
+<pre><code>a) The work must carry prominent notices stating that you modified
+it, and giving a relevant date.
+
+b) The work must carry prominent notices stating that it is
+released under this License and any conditions added under section
+7.  This requirement modifies the requirement in section 4 to
+"keep intact all notices".
+
+c) You must license the entire work, as a whole, under this
+License to anyone who comes into possession of a copy.  This
+License will therefore apply, along with any applicable section 7
+additional terms, to the whole of the work, and all its parts,
+regardless of how they are packaged.  This License gives no
+permission to license the work in any other way, but it does not
+invalidate such permission if you have separately received it.
+
+d) If the work has interactive user interfaces, each must display
+Appropriate Legal Notices; however, if the Program has interactive
+interfaces that do not display Appropriate Legal Notices, your
+work need not make them do so.</code></pre>
+<p>A compilation of a covered work with other separate and independent works, which are not by their nature extensions of the covered work, and which are not combined with it such as to form a larger program, in or on a volume of a storage or distribution medium, is called an “aggregate” if the compilation and its resulting copyright are not used to limit the access or legal rights of the compilation’s users beyond what the individual works permit. Inclusion of a covered work in an aggregate does not cause this License to apply to the other parts of the aggregate.</p>
+<ol start="6" type="1">
+<li>Conveying Non-Source Forms.</li>
+</ol>
+<p>You may convey a covered work in object code form under the terms of sections 4 and 5, provided that you also convey the machine-readable Corresponding Source under the terms of this License, in one of these ways:</p>
+<pre><code>a) Convey the object code in, or embodied in, a physical product
+(including a physical distribution medium), accompanied by the
+Corresponding Source fixed on a durable physical medium
+customarily used for software interchange.
+
+b) Convey the object code in, or embodied in, a physical product
+(including a physical distribution medium), accompanied by a
+written offer, valid for at least three years and valid for as
+long as you offer spare parts or customer support for that product
+model, to give anyone who possesses the object code either (1) a
+copy of the Corresponding Source for all the software in the
+product that is covered by this License, on a durable physical
+medium customarily used for software interchange, for a price no
+more than your reasonable cost of physically performing this
+conveying of source, or (2) access to copy the
+Corresponding Source from a network server at no charge.
+
+c) Convey individual copies of the object code with a copy of the
+written offer to provide the Corresponding Source.  This
+alternative is allowed only occasionally and noncommercially, and
+only if you received the object code with such an offer, in accord
+with subsection 6b.
+
+d) Convey the object code by offering access from a designated
+place (gratis or for a charge), and offer equivalent access to the
+Corresponding Source in the same way through the same place at no
+further charge.  You need not require recipients to copy the
+Corresponding Source along with the object code.  If the place to
+copy the object code is a network server, the Corresponding Source
+may be on a different server (operated by you or a third party)
+that supports equivalent copying facilities, provided you maintain
+clear directions next to the object code saying where to find the
+Corresponding Source.  Regardless of what server hosts the
+Corresponding Source, you remain obligated to ensure that it is
+available for as long as needed to satisfy these requirements.
+
+e) Convey the object code using peer-to-peer transmission, provided
+you inform other peers where the object code and Corresponding
+Source of the work are being offered to the general public at no
+charge under subsection 6d.</code></pre>
+<p>A separable portion of the object code, whose source code is excluded from the Corresponding Source as a System Library, need not be included in conveying the object code work.</p>
+<p>A “User Product” is either (1) a “consumer product”, which means any tangible personal property which is normally used for personal, family, or household purposes, or (2) anything designed or sold for incorporation into a dwelling. In determining whether a product is a consumer product, doubtful cases shall be resolved in favor of coverage. For a particular product received by a particular user, “normally used” refers to a typical or common use of that class of product, regardless of the status of the particular user or of the way in which the particular user actually uses, or expects or is expected to use, the product. A product is a consumer product regardless of whether the product has substantial commercial, industrial or non-consumer uses, unless such uses represent the only significant mode of use of the product.</p>
+<p>“Installation Information” for a User Product means any methods, procedures, authorization keys, or other information required to install and execute modified versions of a covered work in that User Product from a modified version of its Corresponding Source. The information must suffice to ensure that the continued functioning of the modified object code is in no case prevented or interfered with solely because modification has been made.</p>
+<p>If you convey an object code work under this section in, or with, or specifically for use in, a User Product, and the conveying occurs as part of a transaction in which the right of possession and use of the User Product is transferred to the recipient in perpetuity or for a fixed term (regardless of how the transaction is characterized), the Corresponding Source conveyed under this section must be accompanied by the Installation Information. But this requirement does not apply if neither you nor any third party retains the ability to install modified object code on the User Product (for example, the work has been installed in ROM).</p>
+<p>The requirement to provide Installation Information does not include a requirement to continue to provide support service, warranty, or updates for a work that has been modified or installed by the recipient, or for the User Product in which it has been modified or installed. Access to a network may be denied when the modification itself materially and adversely affects the operation of the network or violates the rules and protocols for communication across the network.</p>
+<p>Corresponding Source conveyed, and Installation Information provided, in accord with this section must be in a format that is publicly documented (and with an implementation available to the public in source code form), and must require no special password or key for unpacking, reading or copying.</p>
+<ol start="7" type="1">
+<li>Additional Terms.</li>
+</ol>
+<p>“Additional permissions” are terms that supplement the terms of this License by making exceptions from one or more of its conditions. Additional permissions that are applicable to the entire Program shall be treated as though they were included in this License, to the extent that they are valid under applicable law. If additional permissions apply only to part of the Program, that part may be used separately under those permissions, but the entire Program remains governed by this License without regard to the additional permissions.</p>
+<p>When you convey a copy of a covered work, you may at your option remove any additional permissions from that copy, or from any part of it. (Additional permissions may be written to require their own removal in certain cases when you modify the work.) You may place additional permissions on material, added by you to a covered work, for which you have or can give appropriate copyright permission.</p>
+<p>Notwithstanding any other provision of this License, for material you add to a covered work, you may (if authorized by the copyright holders of that material) supplement the terms of this License with terms:</p>
+<pre><code>a) Disclaiming warranty or limiting liability differently from the
+terms of sections 15 and 16 of this License; or
+
+b) Requiring preservation of specified reasonable legal notices or
+author attributions in that material or in the Appropriate Legal
+Notices displayed by works containing it; or
+
+c) Prohibiting misrepresentation of the origin of that material, or
+requiring that modified versions of such material be marked in
+reasonable ways as different from the original version; or
+
+d) Limiting the use for publicity purposes of names of licensors or
+authors of the material; or
+
+e) Declining to grant rights under trademark law for use of some
+trade names, trademarks, or service marks; or
+
+f) Requiring indemnification of licensors and authors of that
+material by anyone who conveys the material (or modified versions of
+it) with contractual assumptions of liability to the recipient, for
+any liability that these contractual assumptions directly impose on
+those licensors and authors.</code></pre>
+<p>All other non-permissive additional terms are considered “further restrictions” within the meaning of section 10. If the Program as you received it, or any part of it, contains a notice stating that it is governed by this License along with a term that is a further restriction, you may remove that term. If a license document contains a further restriction but permits relicensing or conveying under this License, you may add to a covered work material governed by the terms of that license document, provided that the further restriction does not survive such relicensing or conveying.</p>
+<p>If you add terms to a covered work in accord with this section, you must place, in the relevant source files, a statement of the additional terms that apply to those files, or a notice indicating where to find the applicable terms.</p>
+<p>Additional terms, permissive or non-permissive, may be stated in the form of a separately written license, or stated as exceptions; the above requirements apply either way.</p>
+<ol start="8" type="1">
+<li>Termination.</li>
+</ol>
+<p>You may not propagate or modify a covered work except as expressly provided under this License. Any attempt otherwise to propagate or modify it is void, and will automatically terminate your rights under this License (including any patent licenses granted under the third paragraph of section 11).</p>
+<p>However, if you cease all violation of this License, then your license from a particular copyright holder is reinstated (a) provisionally, unless and until the copyright holder explicitly and finally terminates your license, and (b) permanently, if the copyright holder fails to notify you of the violation by some reasonable means prior to 60 days after the cessation.</p>
+<p>Moreover, your license from a particular copyright holder is reinstated permanently if the copyright holder notifies you of the violation by some reasonable means, this is the first time you have received notice of violation of this License (for any work) from that copyright holder, and you cure the violation prior to 30 days after your receipt of the notice.</p>
+<p>Termination of your rights under this section does not terminate the licenses of parties who have received copies or rights from you under this License. If your rights have been terminated and not permanently reinstated, you do not qualify to receive new licenses for the same material under section 10.</p>
+<ol start="9" type="1">
+<li>Acceptance Not Required for Having Copies.</li>
+</ol>
+<p>You are not required to accept this License in order to receive or run a copy of the Program. Ancillary propagation of a covered work occurring solely as a consequence of using peer-to-peer transmission to receive a copy likewise does not require acceptance. However, nothing other than this License grants you permission to propagate or modify any covered work. These actions infringe copyright if you do not accept this License. Therefore, by modifying or propagating a covered work, you indicate your acceptance of this License to do so.</p>
+<ol start="10" type="1">
+<li>Automatic Licensing of Downstream Recipients.</li>
+</ol>
+<p>Each time you convey a covered work, the recipient automatically receives a license from the original licensors, to run, modify and propagate that work, subject to this License. You are not responsible for enforcing compliance by third parties with this License.</p>
+<p>An “entity transaction” is a transaction transferring control of an organization, or substantially all assets of one, or subdividing an organization, or merging organizations. If propagation of a covered work results from an entity transaction, each party to that transaction who receives a copy of the work also receives whatever licenses to the work the party’s predecessor in interest had or could give under the previous paragraph, plus a right to possession of the Corresponding Source of the work from the predecessor in interest, if the predecessor has it or can get it with reasonable efforts.</p>
+<p>You may not impose any further restrictions on the exercise of the rights granted or affirmed under this License. For example, you may not impose a license fee, royalty, or other charge for exercise of rights granted under this License, and you may not initiate litigation (including a cross-claim or counterclaim in a lawsuit) alleging that any patent claim is infringed by making, using, selling, offering for sale, or importing the Program or any portion of it.</p>
+<ol start="11" type="1">
+<li>Patents.</li>
+</ol>
+<p>A “contributor” is a copyright holder who authorizes use under this License of the Program or a work on which the Program is based. The work thus licensed is called the contributor’s “contributor version”.</p>
+<p>A contributor’s “essential patent claims” are all patent claims owned or controlled by the contributor, whether already acquired or hereafter acquired, that would be infringed by some manner, permitted by this License, of making, using, or selling its contributor version, but do not include claims that would be infringed only as a consequence of further modification of the contributor version. For purposes of this definition, “control” includes the right to grant patent sublicenses in a manner consistent with the requirements of this License.</p>
+<p>Each contributor grants you a non-exclusive, worldwide, royalty-free patent license under the contributor’s essential patent claims, to make, use, sell, offer for sale, import and otherwise run, modify and propagate the contents of its contributor version.</p>
+<p>In the following three paragraphs, a “patent license” is any express agreement or commitment, however denominated, not to enforce a patent (such as an express permission to practice a patent or covenant not to sue for patent infringement). To “grant” such a patent license to a party means to make such an agreement or commitment not to enforce a patent against the party.</p>
+<p>If you convey a covered work, knowingly relying on a patent license, and the Corresponding Source of the work is not available for anyone to copy, free of charge and under the terms of this License, through a publicly available network server or other readily accessible means, then you must either (1) cause the Corresponding Source to be so available, or (2) arrange to deprive yourself of the benefit of the patent license for this particular work, or (3) arrange, in a manner consistent with the requirements of this License, to extend the patent license to downstream recipients. “Knowingly relying” means you have actual knowledge that, but for the patent license, your conveying the covered work in a country, or your recipient’s use of the covered work in a country, would infringe one or more identifiable patents in that country that you have reason to believe are valid.</p>
+<p>If, pursuant to or in connection with a single transaction or arrangement, you convey, or propagate by procuring conveyance of, a covered work, and grant a patent license to some of the parties receiving the covered work authorizing them to use, propagate, modify or convey a specific copy of the covered work, then the patent license you grant is automatically extended to all recipients of the covered work and works based on it.</p>
+<p>A patent license is “discriminatory” if it does not include within the scope of its coverage, prohibits the exercise of, or is conditioned on the non-exercise of one or more of the rights that are specifically granted under this License. You may not convey a covered work if you are a party to an arrangement with a third party that is in the business of distributing software, under which you make payment to the third party based on the extent of your activity of conveying the work, and under which the third party grants, to any of the parties who would receive the covered work from you, a discriminatory patent license (a) in connection with copies of the covered work conveyed by you (or copies made from those copies), or (b) primarily for and in connection with specific products or compilations that contain the covered work, unless you entered into that arrangement, or that patent license was granted, prior to 28 March 2007.</p>
+<p>Nothing in this License shall be construed as excluding or limiting any implied license or other defenses to infringement that may otherwise be available to you under applicable patent law.</p>
+<ol start="12" type="1">
+<li>No Surrender of Others’ Freedom.</li>
+</ol>
+<p>If conditions are imposed on you (whether by court order, agreement or otherwise) that contradict the conditions of this License, they do not excuse you from the conditions of this License. If you cannot convey a covered work so as to satisfy simultaneously your obligations under this License and any other pertinent obligations, then as a consequence you may not convey it at all. For example, if you agree to terms that obligate you to collect a royalty for further conveying from those to whom you convey the Program, the only way you could satisfy both those terms and this License would be to refrain entirely from conveying the Program.</p>
+<ol start="13" type="1">
+<li>Use with the GNU Affero General Public License.</li>
+</ol>
+<p>Notwithstanding any other provision of this License, you have permission to link or combine any covered work with a work licensed under version 3 of the GNU Affero General Public License into a single combined work, and to convey the resulting work. The terms of this License will continue to apply to the part which is the covered work, but the special requirements of the GNU Affero General Public License, section 13, concerning interaction through a network will apply to the combination as such.</p>
+<ol start="14" type="1">
+<li>Revised Versions of this License.</li>
+</ol>
+<p>The Free Software Foundation may publish revised and/or new versions of the GNU General Public License from time to time. Such new versions will be similar in spirit to the present version, but may differ in detail to address new problems or concerns.</p>
+<p>Each version is given a distinguishing version number. If the Program specifies that a certain numbered version of the GNU General Public License “or any later version” applies to it, you have the option of following the terms and conditions either of that numbered version or of any later version published by the Free Software Foundation. If the Program does not specify a version number of the GNU General Public License, you may choose any version ever published by the Free Software Foundation.</p>
+<p>If the Program specifies that a proxy can decide which future versions of the GNU General Public License can be used, that proxy’s public statement of acceptance of a version permanently authorizes you to choose that version for the Program.</p>
+<p>Later license versions may give you additional or different permissions. However, no additional obligations are imposed on any author or copyright holder as a result of your choosing to follow a later version.</p>
+<ol start="15" type="1">
+<li>Disclaimer of Warranty.</li>
+</ol>
+<p>THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.</p>
+<ol start="16" type="1">
+<li>Limitation of Liability.</li>
+</ol>
+<p>IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+<ol start="17" type="1">
+<li>Interpretation of Sections 15 and 16.</li>
+</ol>
+<p>If the disclaimer of warranty and limitation of liability provided above cannot be given local legal effect according to their terms, reviewing courts shall apply local law that most closely approximates an absolute waiver of all civil liability in connection with the Program, unless a warranty or assumption of liability accompanies a copy of the Program in return for a fee.</p>
+<pre><code>                 END OF TERMS AND CONDITIONS
+
+        How to Apply These Terms to Your New Programs</code></pre>
+<p>If you develop a new program, and you want it to be of the greatest possible use to the public, the best way to achieve this is to make it free software which everyone can redistribute and change under these terms.</p>
+<p>To do so, attach the following notices to the program. It is safest to attach them to the start of each source file to most effectively state the exclusion of warranty; and each file should have at least the “copyright” line and a pointer to where the full notice is found.</p>
+<pre><code>&lt;one line to give the program's name and a brief idea of what it does.&gt;
+Copyright (C) &lt;year&gt;  &lt;name of author&gt;
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</code></pre>
+<p>Also add information on how to contact you by electronic and paper mail.</p>
+<p>If the program does terminal interaction, make it output a short notice like this when it starts in an interactive mode:</p>
+<pre><code>&lt;program&gt;  Copyright (C) &lt;year&gt;  &lt;name of author&gt;
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+This is free software, and you are welcome to redistribute it
+under certain conditions; type `show c' for details.</code></pre>
+<p>The hypothetical commands <code>show w' and</code>show c’ should show the appropriate parts of the General Public License. Of course, your program’s commands might be different; for a GUI interface, you would use an “about box”.</p>
+<p>You should also get your employer (if you work as a programmer) or school, if any, to sign a “copyright disclaimer” for the program, if necessary. For more information on this, and how to apply and follow the GNU GPL, see <a href="https://www.gnu.org/licenses/" class="uri">https://www.gnu.org/licenses/</a>.</p>
+<p>The GNU General Public License does not permit incorporating your program into proprietary programs. If your program is a subroutine library, you may consider it more useful to permit linking proprietary applications with the library. If this is what you want to do, use the GNU Lesser General Public License instead of this License. But first, please read <a href="https://www.gnu.org/licenses/why-not-lgpl.html" class="uri">https://www.gnu.org/licenses/why-not-lgpl.html</a>.</p>
+
+
+<!-- -->
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb10" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>GNU GENERAL PUBLIC LICENSE</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>                       Version 3, 29 June 2007</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a> Copyright (C) 2007 Free Software Foundation, Inc. <span class="ot">&lt;https://fsf.org/&gt;</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a> Everyone is permitted to copy and distribute verbatim copies</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a> of this license document, but changing it is not allowed.</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="in">                            Preamble</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  The GNU General Public License is a free, copyleft license for</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>software and other kinds of works.</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>  The licenses for most software and other practical works are designed</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>to take away your freedom to share and change the works.  By contrast,</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>the GNU General Public License is intended to guarantee your freedom to</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>share and change all versions of a program--to make sure it remains free</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>software for all its users.  We, the Free Software Foundation, use the</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>GNU General Public License for most of our software; it applies also to</span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>any other work released this way by its authors.  You can apply it to</span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>your programs, too.</span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>  When we speak of free software, we are referring to freedom, not</span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>price.  Our General Public Licenses are designed to make sure that you</span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>have the freedom to distribute copies of free software (and charge for</span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>them if you wish), that you receive source code or can get it if you</span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>want it, that you can change the software or use pieces of it in new</span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>free programs, and that you know you can do these things.</span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a>  To protect your rights, we need to prevent others from denying you</span>
+<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a>these rights or asking you to surrender the rights.  Therefore, you have</span>
+<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a>certain responsibilities if you distribute copies of the software, or if</span>
+<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a>you modify it: responsibilities to respect the freedom of others.</span>
+<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a>  For example, if you distribute copies of such a program, whether</span>
+<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a>gratis or for a fee, you must pass on to the recipients the same</span>
+<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a>freedoms that you received.  You must make sure that they, too, receive</span>
+<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a>or can get the source code.  And you must show them these terms so they</span>
+<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a>know their rights.</span>
+<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a>  Developers that use the GNU GPL protect your rights with two steps:</span>
+<span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a>(1) assert copyright on the software, and (2) offer you this License</span>
+<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a>giving you legal permission to copy, distribute and/or modify it.</span>
+<span id="cb10-43"><a href="#cb10-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-44"><a href="#cb10-44" aria-hidden="true" tabindex="-1"></a>  For the developers' and authors' protection, the GPL clearly explains</span>
+<span id="cb10-45"><a href="#cb10-45" aria-hidden="true" tabindex="-1"></a>that there is no warranty for this free software.  For both users' and</span>
+<span id="cb10-46"><a href="#cb10-46" aria-hidden="true" tabindex="-1"></a>authors' sake, the GPL requires that modified versions be marked as</span>
+<span id="cb10-47"><a href="#cb10-47" aria-hidden="true" tabindex="-1"></a>changed, so that their problems will not be attributed erroneously to</span>
+<span id="cb10-48"><a href="#cb10-48" aria-hidden="true" tabindex="-1"></a>authors of previous versions.</span>
+<span id="cb10-49"><a href="#cb10-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-50"><a href="#cb10-50" aria-hidden="true" tabindex="-1"></a>  Some devices are designed to deny users access to install or run</span>
+<span id="cb10-51"><a href="#cb10-51" aria-hidden="true" tabindex="-1"></a>modified versions of the software inside them, although the manufacturer</span>
+<span id="cb10-52"><a href="#cb10-52" aria-hidden="true" tabindex="-1"></a>can do so.  This is fundamentally incompatible with the aim of</span>
+<span id="cb10-53"><a href="#cb10-53" aria-hidden="true" tabindex="-1"></a>protecting users' freedom to change the software.  The systematic</span>
+<span id="cb10-54"><a href="#cb10-54" aria-hidden="true" tabindex="-1"></a>pattern of such abuse occurs in the area of products for individuals to</span>
+<span id="cb10-55"><a href="#cb10-55" aria-hidden="true" tabindex="-1"></a>use, which is precisely where it is most unacceptable.  Therefore, we</span>
+<span id="cb10-56"><a href="#cb10-56" aria-hidden="true" tabindex="-1"></a>have designed this version of the GPL to prohibit the practice for those</span>
+<span id="cb10-57"><a href="#cb10-57" aria-hidden="true" tabindex="-1"></a>products.  If such problems arise substantially in other domains, we</span>
+<span id="cb10-58"><a href="#cb10-58" aria-hidden="true" tabindex="-1"></a>stand ready to extend this provision to those domains in future versions</span>
+<span id="cb10-59"><a href="#cb10-59" aria-hidden="true" tabindex="-1"></a>of the GPL, as needed to protect the freedom of users.</span>
+<span id="cb10-60"><a href="#cb10-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-61"><a href="#cb10-61" aria-hidden="true" tabindex="-1"></a>  Finally, every program is threatened constantly by software patents.</span>
+<span id="cb10-62"><a href="#cb10-62" aria-hidden="true" tabindex="-1"></a>States should not allow patents to restrict development and use of</span>
+<span id="cb10-63"><a href="#cb10-63" aria-hidden="true" tabindex="-1"></a>software on general-purpose computers, but in those that do, we wish to</span>
+<span id="cb10-64"><a href="#cb10-64" aria-hidden="true" tabindex="-1"></a>avoid the special danger that patents applied to a free program could</span>
+<span id="cb10-65"><a href="#cb10-65" aria-hidden="true" tabindex="-1"></a>make it effectively proprietary.  To prevent this, the GPL assures that</span>
+<span id="cb10-66"><a href="#cb10-66" aria-hidden="true" tabindex="-1"></a>patents cannot be used to render the program non-free.</span>
+<span id="cb10-67"><a href="#cb10-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-68"><a href="#cb10-68" aria-hidden="true" tabindex="-1"></a>  The precise terms and conditions for copying, distribution and</span>
+<span id="cb10-69"><a href="#cb10-69" aria-hidden="true" tabindex="-1"></a>modification follow.</span>
+<span id="cb10-70"><a href="#cb10-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-71"><a href="#cb10-71" aria-hidden="true" tabindex="-1"></a><span class="in">                       TERMS AND CONDITIONS</span></span>
+<span id="cb10-72"><a href="#cb10-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-73"><a href="#cb10-73" aria-hidden="true" tabindex="-1"></a><span class="ss">  0. </span>Definitions.</span>
+<span id="cb10-74"><a href="#cb10-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-75"><a href="#cb10-75" aria-hidden="true" tabindex="-1"></a>  "This License" refers to version 3 of the GNU General Public License.</span>
+<span id="cb10-76"><a href="#cb10-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-77"><a href="#cb10-77" aria-hidden="true" tabindex="-1"></a>  "Copyright" also means copyright-like laws that apply to other kinds of</span>
+<span id="cb10-78"><a href="#cb10-78" aria-hidden="true" tabindex="-1"></a>works, such as semiconductor masks.</span>
+<span id="cb10-79"><a href="#cb10-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-80"><a href="#cb10-80" aria-hidden="true" tabindex="-1"></a>  "The Program" refers to any copyrightable work licensed under this</span>
+<span id="cb10-81"><a href="#cb10-81" aria-hidden="true" tabindex="-1"></a>License.  Each licensee is addressed as "you".  "Licensees" and</span>
+<span id="cb10-82"><a href="#cb10-82" aria-hidden="true" tabindex="-1"></a>"recipients" may be individuals or organizations.</span>
+<span id="cb10-83"><a href="#cb10-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-84"><a href="#cb10-84" aria-hidden="true" tabindex="-1"></a>  To "modify" a work means to copy from or adapt all or part of the work</span>
+<span id="cb10-85"><a href="#cb10-85" aria-hidden="true" tabindex="-1"></a>in a fashion requiring copyright permission, other than the making of an</span>
+<span id="cb10-86"><a href="#cb10-86" aria-hidden="true" tabindex="-1"></a>exact copy.  The resulting work is called a "modified version" of the</span>
+<span id="cb10-87"><a href="#cb10-87" aria-hidden="true" tabindex="-1"></a>earlier work or a work "based on" the earlier work.</span>
+<span id="cb10-88"><a href="#cb10-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-89"><a href="#cb10-89" aria-hidden="true" tabindex="-1"></a>  A "covered work" means either the unmodified Program or a work based</span>
+<span id="cb10-90"><a href="#cb10-90" aria-hidden="true" tabindex="-1"></a>on the Program.</span>
+<span id="cb10-91"><a href="#cb10-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-92"><a href="#cb10-92" aria-hidden="true" tabindex="-1"></a>  To "propagate" a work means to do anything with it that, without</span>
+<span id="cb10-93"><a href="#cb10-93" aria-hidden="true" tabindex="-1"></a>permission, would make you directly or secondarily liable for</span>
+<span id="cb10-94"><a href="#cb10-94" aria-hidden="true" tabindex="-1"></a>infringement under applicable copyright law, except executing it on a</span>
+<span id="cb10-95"><a href="#cb10-95" aria-hidden="true" tabindex="-1"></a>computer or modifying a private copy.  Propagation includes copying,</span>
+<span id="cb10-96"><a href="#cb10-96" aria-hidden="true" tabindex="-1"></a>distribution (with or without modification), making available to the</span>
+<span id="cb10-97"><a href="#cb10-97" aria-hidden="true" tabindex="-1"></a>public, and in some countries other activities as well.</span>
+<span id="cb10-98"><a href="#cb10-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-99"><a href="#cb10-99" aria-hidden="true" tabindex="-1"></a>  To "convey" a work means any kind of propagation that enables other</span>
+<span id="cb10-100"><a href="#cb10-100" aria-hidden="true" tabindex="-1"></a>parties to make or receive copies.  Mere interaction with a user through</span>
+<span id="cb10-101"><a href="#cb10-101" aria-hidden="true" tabindex="-1"></a>a computer network, with no transfer of a copy, is not conveying.</span>
+<span id="cb10-102"><a href="#cb10-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-103"><a href="#cb10-103" aria-hidden="true" tabindex="-1"></a>  An interactive user interface displays "Appropriate Legal Notices"</span>
+<span id="cb10-104"><a href="#cb10-104" aria-hidden="true" tabindex="-1"></a>to the extent that it includes a convenient and prominently visible</span>
+<span id="cb10-105"><a href="#cb10-105" aria-hidden="true" tabindex="-1"></a>feature that (1) displays an appropriate copyright notice, and (2)</span>
+<span id="cb10-106"><a href="#cb10-106" aria-hidden="true" tabindex="-1"></a>tells the user that there is no warranty for the work (except to the</span>
+<span id="cb10-107"><a href="#cb10-107" aria-hidden="true" tabindex="-1"></a>extent that warranties are provided), that licensees may convey the</span>
+<span id="cb10-108"><a href="#cb10-108" aria-hidden="true" tabindex="-1"></a>work under this License, and how to view a copy of this License.  If</span>
+<span id="cb10-109"><a href="#cb10-109" aria-hidden="true" tabindex="-1"></a>the interface presents a list of user commands or options, such as a</span>
+<span id="cb10-110"><a href="#cb10-110" aria-hidden="true" tabindex="-1"></a>menu, a prominent item in the list meets this criterion.</span>
+<span id="cb10-111"><a href="#cb10-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-112"><a href="#cb10-112" aria-hidden="true" tabindex="-1"></a><span class="ss">  1. </span>Source Code.</span>
+<span id="cb10-113"><a href="#cb10-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-114"><a href="#cb10-114" aria-hidden="true" tabindex="-1"></a>  The "source code" for a work means the preferred form of the work</span>
+<span id="cb10-115"><a href="#cb10-115" aria-hidden="true" tabindex="-1"></a>for making modifications to it.  "Object code" means any non-source</span>
+<span id="cb10-116"><a href="#cb10-116" aria-hidden="true" tabindex="-1"></a>form of a work.</span>
+<span id="cb10-117"><a href="#cb10-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-118"><a href="#cb10-118" aria-hidden="true" tabindex="-1"></a>  A "Standard Interface" means an interface that either is an official</span>
+<span id="cb10-119"><a href="#cb10-119" aria-hidden="true" tabindex="-1"></a>standard defined by a recognized standards body, or, in the case of</span>
+<span id="cb10-120"><a href="#cb10-120" aria-hidden="true" tabindex="-1"></a>interfaces specified for a particular programming language, one that</span>
+<span id="cb10-121"><a href="#cb10-121" aria-hidden="true" tabindex="-1"></a>is widely used among developers working in that language.</span>
+<span id="cb10-122"><a href="#cb10-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-123"><a href="#cb10-123" aria-hidden="true" tabindex="-1"></a>  The "System Libraries" of an executable work include anything, other</span>
+<span id="cb10-124"><a href="#cb10-124" aria-hidden="true" tabindex="-1"></a>than the work as a whole, that (a) is included in the normal form of</span>
+<span id="cb10-125"><a href="#cb10-125" aria-hidden="true" tabindex="-1"></a>packaging a Major Component, but which is not part of that Major</span>
+<span id="cb10-126"><a href="#cb10-126" aria-hidden="true" tabindex="-1"></a>Component, and (b) serves only to enable use of the work with that</span>
+<span id="cb10-127"><a href="#cb10-127" aria-hidden="true" tabindex="-1"></a>Major Component, or to implement a Standard Interface for which an</span>
+<span id="cb10-128"><a href="#cb10-128" aria-hidden="true" tabindex="-1"></a>implementation is available to the public in source code form.  A</span>
+<span id="cb10-129"><a href="#cb10-129" aria-hidden="true" tabindex="-1"></a>"Major Component", in this context, means a major essential component</span>
+<span id="cb10-130"><a href="#cb10-130" aria-hidden="true" tabindex="-1"></a>(kernel, window system, and so on) of the specific operating system</span>
+<span id="cb10-131"><a href="#cb10-131" aria-hidden="true" tabindex="-1"></a>(if any) on which the executable work runs, or a compiler used to</span>
+<span id="cb10-132"><a href="#cb10-132" aria-hidden="true" tabindex="-1"></a>produce the work, or an object code interpreter used to run it.</span>
+<span id="cb10-133"><a href="#cb10-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-134"><a href="#cb10-134" aria-hidden="true" tabindex="-1"></a>  The "Corresponding Source" for a work in object code form means all</span>
+<span id="cb10-135"><a href="#cb10-135" aria-hidden="true" tabindex="-1"></a>the source code needed to generate, install, and (for an executable</span>
+<span id="cb10-136"><a href="#cb10-136" aria-hidden="true" tabindex="-1"></a>work) run the object code and to modify the work, including scripts to</span>
+<span id="cb10-137"><a href="#cb10-137" aria-hidden="true" tabindex="-1"></a>control those activities.  However, it does not include the work's</span>
+<span id="cb10-138"><a href="#cb10-138" aria-hidden="true" tabindex="-1"></a>System Libraries, or general-purpose tools or generally available free</span>
+<span id="cb10-139"><a href="#cb10-139" aria-hidden="true" tabindex="-1"></a>programs which are used unmodified in performing those activities but</span>
+<span id="cb10-140"><a href="#cb10-140" aria-hidden="true" tabindex="-1"></a>which are not part of the work.  For example, Corresponding Source</span>
+<span id="cb10-141"><a href="#cb10-141" aria-hidden="true" tabindex="-1"></a>includes interface definition files associated with source files for</span>
+<span id="cb10-142"><a href="#cb10-142" aria-hidden="true" tabindex="-1"></a>the work, and the source code for shared libraries and dynamically</span>
+<span id="cb10-143"><a href="#cb10-143" aria-hidden="true" tabindex="-1"></a>linked subprograms that the work is specifically designed to require,</span>
+<span id="cb10-144"><a href="#cb10-144" aria-hidden="true" tabindex="-1"></a>such as by intimate data communication or control flow between those</span>
+<span id="cb10-145"><a href="#cb10-145" aria-hidden="true" tabindex="-1"></a>subprograms and other parts of the work.</span>
+<span id="cb10-146"><a href="#cb10-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-147"><a href="#cb10-147" aria-hidden="true" tabindex="-1"></a>  The Corresponding Source need not include anything that users</span>
+<span id="cb10-148"><a href="#cb10-148" aria-hidden="true" tabindex="-1"></a>can regenerate automatically from other parts of the Corresponding</span>
+<span id="cb10-149"><a href="#cb10-149" aria-hidden="true" tabindex="-1"></a>Source.</span>
+<span id="cb10-150"><a href="#cb10-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-151"><a href="#cb10-151" aria-hidden="true" tabindex="-1"></a>  The Corresponding Source for a work in source code form is that</span>
+<span id="cb10-152"><a href="#cb10-152" aria-hidden="true" tabindex="-1"></a>same work.</span>
+<span id="cb10-153"><a href="#cb10-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-154"><a href="#cb10-154" aria-hidden="true" tabindex="-1"></a><span class="ss">  2. </span>Basic Permissions.</span>
+<span id="cb10-155"><a href="#cb10-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-156"><a href="#cb10-156" aria-hidden="true" tabindex="-1"></a>  All rights granted under this License are granted for the term of</span>
+<span id="cb10-157"><a href="#cb10-157" aria-hidden="true" tabindex="-1"></a>copyright on the Program, and are irrevocable provided the stated</span>
+<span id="cb10-158"><a href="#cb10-158" aria-hidden="true" tabindex="-1"></a>conditions are met.  This License explicitly affirms your unlimited</span>
+<span id="cb10-159"><a href="#cb10-159" aria-hidden="true" tabindex="-1"></a>permission to run the unmodified Program.  The output from running a</span>
+<span id="cb10-160"><a href="#cb10-160" aria-hidden="true" tabindex="-1"></a>covered work is covered by this License only if the output, given its</span>
+<span id="cb10-161"><a href="#cb10-161" aria-hidden="true" tabindex="-1"></a>content, constitutes a covered work.  This License acknowledges your</span>
+<span id="cb10-162"><a href="#cb10-162" aria-hidden="true" tabindex="-1"></a>rights of fair use or other equivalent, as provided by copyright law.</span>
+<span id="cb10-163"><a href="#cb10-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-164"><a href="#cb10-164" aria-hidden="true" tabindex="-1"></a>  You may make, run and propagate covered works that you do not</span>
+<span id="cb10-165"><a href="#cb10-165" aria-hidden="true" tabindex="-1"></a>convey, without conditions so long as your license otherwise remains</span>
+<span id="cb10-166"><a href="#cb10-166" aria-hidden="true" tabindex="-1"></a>in force.  You may convey covered works to others for the sole purpose</span>
+<span id="cb10-167"><a href="#cb10-167" aria-hidden="true" tabindex="-1"></a>of having them make modifications exclusively for you, or provide you</span>
+<span id="cb10-168"><a href="#cb10-168" aria-hidden="true" tabindex="-1"></a>with facilities for running those works, provided that you comply with</span>
+<span id="cb10-169"><a href="#cb10-169" aria-hidden="true" tabindex="-1"></a>the terms of this License in conveying all material for which you do</span>
+<span id="cb10-170"><a href="#cb10-170" aria-hidden="true" tabindex="-1"></a>not control copyright.  Those thus making or running the covered works</span>
+<span id="cb10-171"><a href="#cb10-171" aria-hidden="true" tabindex="-1"></a>for you must do so exclusively on your behalf, under your direction</span>
+<span id="cb10-172"><a href="#cb10-172" aria-hidden="true" tabindex="-1"></a>and control, on terms that prohibit them from making any copies of</span>
+<span id="cb10-173"><a href="#cb10-173" aria-hidden="true" tabindex="-1"></a>your copyrighted material outside their relationship with you.</span>
+<span id="cb10-174"><a href="#cb10-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-175"><a href="#cb10-175" aria-hidden="true" tabindex="-1"></a>  Conveying under any other circumstances is permitted solely under</span>
+<span id="cb10-176"><a href="#cb10-176" aria-hidden="true" tabindex="-1"></a>the conditions stated below.  Sublicensing is not allowed; section 10</span>
+<span id="cb10-177"><a href="#cb10-177" aria-hidden="true" tabindex="-1"></a>makes it unnecessary.</span>
+<span id="cb10-178"><a href="#cb10-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-179"><a href="#cb10-179" aria-hidden="true" tabindex="-1"></a><span class="ss">  3. </span>Protecting Users' Legal Rights From Anti-Circumvention Law.</span>
+<span id="cb10-180"><a href="#cb10-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-181"><a href="#cb10-181" aria-hidden="true" tabindex="-1"></a>  No covered work shall be deemed part of an effective technological</span>
+<span id="cb10-182"><a href="#cb10-182" aria-hidden="true" tabindex="-1"></a>measure under any applicable law fulfilling obligations under article</span>
+<span id="cb10-183"><a href="#cb10-183" aria-hidden="true" tabindex="-1"></a>11 of the WIPO copyright treaty adopted on 20 December 1996, or</span>
+<span id="cb10-184"><a href="#cb10-184" aria-hidden="true" tabindex="-1"></a>similar laws prohibiting or restricting circumvention of such</span>
+<span id="cb10-185"><a href="#cb10-185" aria-hidden="true" tabindex="-1"></a>measures.</span>
+<span id="cb10-186"><a href="#cb10-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-187"><a href="#cb10-187" aria-hidden="true" tabindex="-1"></a>  When you convey a covered work, you waive any legal power to forbid</span>
+<span id="cb10-188"><a href="#cb10-188" aria-hidden="true" tabindex="-1"></a>circumvention of technological measures to the extent such circumvention</span>
+<span id="cb10-189"><a href="#cb10-189" aria-hidden="true" tabindex="-1"></a>is effected by exercising rights under this License with respect to</span>
+<span id="cb10-190"><a href="#cb10-190" aria-hidden="true" tabindex="-1"></a>the covered work, and you disclaim any intention to limit operation or</span>
+<span id="cb10-191"><a href="#cb10-191" aria-hidden="true" tabindex="-1"></a>modification of the work as a means of enforcing, against the work's</span>
+<span id="cb10-192"><a href="#cb10-192" aria-hidden="true" tabindex="-1"></a>users, your or third parties' legal rights to forbid circumvention of</span>
+<span id="cb10-193"><a href="#cb10-193" aria-hidden="true" tabindex="-1"></a>technological measures.</span>
+<span id="cb10-194"><a href="#cb10-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-195"><a href="#cb10-195" aria-hidden="true" tabindex="-1"></a><span class="ss">  4. </span>Conveying Verbatim Copies.</span>
+<span id="cb10-196"><a href="#cb10-196" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-197"><a href="#cb10-197" aria-hidden="true" tabindex="-1"></a>  You may convey verbatim copies of the Program's source code as you</span>
+<span id="cb10-198"><a href="#cb10-198" aria-hidden="true" tabindex="-1"></a>receive it, in any medium, provided that you conspicuously and</span>
+<span id="cb10-199"><a href="#cb10-199" aria-hidden="true" tabindex="-1"></a>appropriately publish on each copy an appropriate copyright notice;</span>
+<span id="cb10-200"><a href="#cb10-200" aria-hidden="true" tabindex="-1"></a>keep intact all notices stating that this License and any</span>
+<span id="cb10-201"><a href="#cb10-201" aria-hidden="true" tabindex="-1"></a>non-permissive terms added in accord with section 7 apply to the code;</span>
+<span id="cb10-202"><a href="#cb10-202" aria-hidden="true" tabindex="-1"></a>keep intact all notices of the absence of any warranty; and give all</span>
+<span id="cb10-203"><a href="#cb10-203" aria-hidden="true" tabindex="-1"></a>recipients a copy of this License along with the Program.</span>
+<span id="cb10-204"><a href="#cb10-204" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-205"><a href="#cb10-205" aria-hidden="true" tabindex="-1"></a>  You may charge any price or no price for each copy that you convey,</span>
+<span id="cb10-206"><a href="#cb10-206" aria-hidden="true" tabindex="-1"></a>and you may offer support or warranty protection for a fee.</span>
+<span id="cb10-207"><a href="#cb10-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-208"><a href="#cb10-208" aria-hidden="true" tabindex="-1"></a><span class="ss">  5. </span>Conveying Modified Source Versions.</span>
+<span id="cb10-209"><a href="#cb10-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-210"><a href="#cb10-210" aria-hidden="true" tabindex="-1"></a>  You may convey a work based on the Program, or the modifications to</span>
+<span id="cb10-211"><a href="#cb10-211" aria-hidden="true" tabindex="-1"></a>produce it from the Program, in the form of source code under the</span>
+<span id="cb10-212"><a href="#cb10-212" aria-hidden="true" tabindex="-1"></a>terms of section 4, provided that you also meet all of these conditions:</span>
+<span id="cb10-213"><a href="#cb10-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-214"><a href="#cb10-214" aria-hidden="true" tabindex="-1"></a><span class="in">    a) The work must carry prominent notices stating that you modified</span></span>
+<span id="cb10-215"><a href="#cb10-215" aria-hidden="true" tabindex="-1"></a><span class="in">    it, and giving a relevant date.</span></span>
+<span id="cb10-216"><a href="#cb10-216" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-217"><a href="#cb10-217" aria-hidden="true" tabindex="-1"></a><span class="in">    b) The work must carry prominent notices stating that it is</span></span>
+<span id="cb10-218"><a href="#cb10-218" aria-hidden="true" tabindex="-1"></a><span class="in">    released under this License and any conditions added under section</span></span>
+<span id="cb10-219"><a href="#cb10-219" aria-hidden="true" tabindex="-1"></a><span class="in">    7.  This requirement modifies the requirement in section 4 to</span></span>
+<span id="cb10-220"><a href="#cb10-220" aria-hidden="true" tabindex="-1"></a><span class="in">    "keep intact all notices".</span></span>
+<span id="cb10-221"><a href="#cb10-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-222"><a href="#cb10-222" aria-hidden="true" tabindex="-1"></a><span class="in">    c) You must license the entire work, as a whole, under this</span></span>
+<span id="cb10-223"><a href="#cb10-223" aria-hidden="true" tabindex="-1"></a><span class="in">    License to anyone who comes into possession of a copy.  This</span></span>
+<span id="cb10-224"><a href="#cb10-224" aria-hidden="true" tabindex="-1"></a><span class="in">    License will therefore apply, along with any applicable section 7</span></span>
+<span id="cb10-225"><a href="#cb10-225" aria-hidden="true" tabindex="-1"></a><span class="in">    additional terms, to the whole of the work, and all its parts,</span></span>
+<span id="cb10-226"><a href="#cb10-226" aria-hidden="true" tabindex="-1"></a><span class="in">    regardless of how they are packaged.  This License gives no</span></span>
+<span id="cb10-227"><a href="#cb10-227" aria-hidden="true" tabindex="-1"></a><span class="in">    permission to license the work in any other way, but it does not</span></span>
+<span id="cb10-228"><a href="#cb10-228" aria-hidden="true" tabindex="-1"></a><span class="in">    invalidate such permission if you have separately received it.</span></span>
+<span id="cb10-229"><a href="#cb10-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-230"><a href="#cb10-230" aria-hidden="true" tabindex="-1"></a><span class="in">    d) If the work has interactive user interfaces, each must display</span></span>
+<span id="cb10-231"><a href="#cb10-231" aria-hidden="true" tabindex="-1"></a><span class="in">    Appropriate Legal Notices; however, if the Program has interactive</span></span>
+<span id="cb10-232"><a href="#cb10-232" aria-hidden="true" tabindex="-1"></a><span class="in">    interfaces that do not display Appropriate Legal Notices, your</span></span>
+<span id="cb10-233"><a href="#cb10-233" aria-hidden="true" tabindex="-1"></a><span class="in">    work need not make them do so.</span></span>
+<span id="cb10-234"><a href="#cb10-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-235"><a href="#cb10-235" aria-hidden="true" tabindex="-1"></a>  A compilation of a covered work with other separate and independent</span>
+<span id="cb10-236"><a href="#cb10-236" aria-hidden="true" tabindex="-1"></a>works, which are not by their nature extensions of the covered work,</span>
+<span id="cb10-237"><a href="#cb10-237" aria-hidden="true" tabindex="-1"></a>and which are not combined with it such as to form a larger program,</span>
+<span id="cb10-238"><a href="#cb10-238" aria-hidden="true" tabindex="-1"></a>in or on a volume of a storage or distribution medium, is called an</span>
+<span id="cb10-239"><a href="#cb10-239" aria-hidden="true" tabindex="-1"></a>"aggregate" if the compilation and its resulting copyright are not</span>
+<span id="cb10-240"><a href="#cb10-240" aria-hidden="true" tabindex="-1"></a>used to limit the access or legal rights of the compilation's users</span>
+<span id="cb10-241"><a href="#cb10-241" aria-hidden="true" tabindex="-1"></a>beyond what the individual works permit.  Inclusion of a covered work</span>
+<span id="cb10-242"><a href="#cb10-242" aria-hidden="true" tabindex="-1"></a>in an aggregate does not cause this License to apply to the other</span>
+<span id="cb10-243"><a href="#cb10-243" aria-hidden="true" tabindex="-1"></a>parts of the aggregate.</span>
+<span id="cb10-244"><a href="#cb10-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-245"><a href="#cb10-245" aria-hidden="true" tabindex="-1"></a><span class="ss">  6. </span>Conveying Non-Source Forms.</span>
+<span id="cb10-246"><a href="#cb10-246" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-247"><a href="#cb10-247" aria-hidden="true" tabindex="-1"></a>  You may convey a covered work in object code form under the terms</span>
+<span id="cb10-248"><a href="#cb10-248" aria-hidden="true" tabindex="-1"></a>of sections 4 and 5, provided that you also convey the</span>
+<span id="cb10-249"><a href="#cb10-249" aria-hidden="true" tabindex="-1"></a>machine-readable Corresponding Source under the terms of this License,</span>
+<span id="cb10-250"><a href="#cb10-250" aria-hidden="true" tabindex="-1"></a>in one of these ways:</span>
+<span id="cb10-251"><a href="#cb10-251" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-252"><a href="#cb10-252" aria-hidden="true" tabindex="-1"></a><span class="in">    a) Convey the object code in, or embodied in, a physical product</span></span>
+<span id="cb10-253"><a href="#cb10-253" aria-hidden="true" tabindex="-1"></a><span class="in">    (including a physical distribution medium), accompanied by the</span></span>
+<span id="cb10-254"><a href="#cb10-254" aria-hidden="true" tabindex="-1"></a><span class="in">    Corresponding Source fixed on a durable physical medium</span></span>
+<span id="cb10-255"><a href="#cb10-255" aria-hidden="true" tabindex="-1"></a><span class="in">    customarily used for software interchange.</span></span>
+<span id="cb10-256"><a href="#cb10-256" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-257"><a href="#cb10-257" aria-hidden="true" tabindex="-1"></a><span class="in">    b) Convey the object code in, or embodied in, a physical product</span></span>
+<span id="cb10-258"><a href="#cb10-258" aria-hidden="true" tabindex="-1"></a><span class="in">    (including a physical distribution medium), accompanied by a</span></span>
+<span id="cb10-259"><a href="#cb10-259" aria-hidden="true" tabindex="-1"></a><span class="in">    written offer, valid for at least three years and valid for as</span></span>
+<span id="cb10-260"><a href="#cb10-260" aria-hidden="true" tabindex="-1"></a><span class="in">    long as you offer spare parts or customer support for that product</span></span>
+<span id="cb10-261"><a href="#cb10-261" aria-hidden="true" tabindex="-1"></a><span class="in">    model, to give anyone who possesses the object code either (1) a</span></span>
+<span id="cb10-262"><a href="#cb10-262" aria-hidden="true" tabindex="-1"></a><span class="in">    copy of the Corresponding Source for all the software in the</span></span>
+<span id="cb10-263"><a href="#cb10-263" aria-hidden="true" tabindex="-1"></a><span class="in">    product that is covered by this License, on a durable physical</span></span>
+<span id="cb10-264"><a href="#cb10-264" aria-hidden="true" tabindex="-1"></a><span class="in">    medium customarily used for software interchange, for a price no</span></span>
+<span id="cb10-265"><a href="#cb10-265" aria-hidden="true" tabindex="-1"></a><span class="in">    more than your reasonable cost of physically performing this</span></span>
+<span id="cb10-266"><a href="#cb10-266" aria-hidden="true" tabindex="-1"></a><span class="in">    conveying of source, or (2) access to copy the</span></span>
+<span id="cb10-267"><a href="#cb10-267" aria-hidden="true" tabindex="-1"></a><span class="in">    Corresponding Source from a network server at no charge.</span></span>
+<span id="cb10-268"><a href="#cb10-268" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-269"><a href="#cb10-269" aria-hidden="true" tabindex="-1"></a><span class="in">    c) Convey individual copies of the object code with a copy of the</span></span>
+<span id="cb10-270"><a href="#cb10-270" aria-hidden="true" tabindex="-1"></a><span class="in">    written offer to provide the Corresponding Source.  This</span></span>
+<span id="cb10-271"><a href="#cb10-271" aria-hidden="true" tabindex="-1"></a><span class="in">    alternative is allowed only occasionally and noncommercially, and</span></span>
+<span id="cb10-272"><a href="#cb10-272" aria-hidden="true" tabindex="-1"></a><span class="in">    only if you received the object code with such an offer, in accord</span></span>
+<span id="cb10-273"><a href="#cb10-273" aria-hidden="true" tabindex="-1"></a><span class="in">    with subsection 6b.</span></span>
+<span id="cb10-274"><a href="#cb10-274" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-275"><a href="#cb10-275" aria-hidden="true" tabindex="-1"></a><span class="in">    d) Convey the object code by offering access from a designated</span></span>
+<span id="cb10-276"><a href="#cb10-276" aria-hidden="true" tabindex="-1"></a><span class="in">    place (gratis or for a charge), and offer equivalent access to the</span></span>
+<span id="cb10-277"><a href="#cb10-277" aria-hidden="true" tabindex="-1"></a><span class="in">    Corresponding Source in the same way through the same place at no</span></span>
+<span id="cb10-278"><a href="#cb10-278" aria-hidden="true" tabindex="-1"></a><span class="in">    further charge.  You need not require recipients to copy the</span></span>
+<span id="cb10-279"><a href="#cb10-279" aria-hidden="true" tabindex="-1"></a><span class="in">    Corresponding Source along with the object code.  If the place to</span></span>
+<span id="cb10-280"><a href="#cb10-280" aria-hidden="true" tabindex="-1"></a><span class="in">    copy the object code is a network server, the Corresponding Source</span></span>
+<span id="cb10-281"><a href="#cb10-281" aria-hidden="true" tabindex="-1"></a><span class="in">    may be on a different server (operated by you or a third party)</span></span>
+<span id="cb10-282"><a href="#cb10-282" aria-hidden="true" tabindex="-1"></a><span class="in">    that supports equivalent copying facilities, provided you maintain</span></span>
+<span id="cb10-283"><a href="#cb10-283" aria-hidden="true" tabindex="-1"></a><span class="in">    clear directions next to the object code saying where to find the</span></span>
+<span id="cb10-284"><a href="#cb10-284" aria-hidden="true" tabindex="-1"></a><span class="in">    Corresponding Source.  Regardless of what server hosts the</span></span>
+<span id="cb10-285"><a href="#cb10-285" aria-hidden="true" tabindex="-1"></a><span class="in">    Corresponding Source, you remain obligated to ensure that it is</span></span>
+<span id="cb10-286"><a href="#cb10-286" aria-hidden="true" tabindex="-1"></a><span class="in">    available for as long as needed to satisfy these requirements.</span></span>
+<span id="cb10-287"><a href="#cb10-287" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-288"><a href="#cb10-288" aria-hidden="true" tabindex="-1"></a><span class="in">    e) Convey the object code using peer-to-peer transmission, provided</span></span>
+<span id="cb10-289"><a href="#cb10-289" aria-hidden="true" tabindex="-1"></a><span class="in">    you inform other peers where the object code and Corresponding</span></span>
+<span id="cb10-290"><a href="#cb10-290" aria-hidden="true" tabindex="-1"></a><span class="in">    Source of the work are being offered to the general public at no</span></span>
+<span id="cb10-291"><a href="#cb10-291" aria-hidden="true" tabindex="-1"></a><span class="in">    charge under subsection 6d.</span></span>
+<span id="cb10-292"><a href="#cb10-292" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-293"><a href="#cb10-293" aria-hidden="true" tabindex="-1"></a>  A separable portion of the object code, whose source code is excluded</span>
+<span id="cb10-294"><a href="#cb10-294" aria-hidden="true" tabindex="-1"></a>from the Corresponding Source as a System Library, need not be</span>
+<span id="cb10-295"><a href="#cb10-295" aria-hidden="true" tabindex="-1"></a>included in conveying the object code work.</span>
+<span id="cb10-296"><a href="#cb10-296" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-297"><a href="#cb10-297" aria-hidden="true" tabindex="-1"></a>  A "User Product" is either (1) a "consumer product", which means any</span>
+<span id="cb10-298"><a href="#cb10-298" aria-hidden="true" tabindex="-1"></a>tangible personal property which is normally used for personal, family,</span>
+<span id="cb10-299"><a href="#cb10-299" aria-hidden="true" tabindex="-1"></a>or household purposes, or (2) anything designed or sold for incorporation</span>
+<span id="cb10-300"><a href="#cb10-300" aria-hidden="true" tabindex="-1"></a>into a dwelling.  In determining whether a product is a consumer product,</span>
+<span id="cb10-301"><a href="#cb10-301" aria-hidden="true" tabindex="-1"></a>doubtful cases shall be resolved in favor of coverage.  For a particular</span>
+<span id="cb10-302"><a href="#cb10-302" aria-hidden="true" tabindex="-1"></a>product received by a particular user, "normally used" refers to a</span>
+<span id="cb10-303"><a href="#cb10-303" aria-hidden="true" tabindex="-1"></a>typical or common use of that class of product, regardless of the status</span>
+<span id="cb10-304"><a href="#cb10-304" aria-hidden="true" tabindex="-1"></a>of the particular user or of the way in which the particular user</span>
+<span id="cb10-305"><a href="#cb10-305" aria-hidden="true" tabindex="-1"></a>actually uses, or expects or is expected to use, the product.  A product</span>
+<span id="cb10-306"><a href="#cb10-306" aria-hidden="true" tabindex="-1"></a>is a consumer product regardless of whether the product has substantial</span>
+<span id="cb10-307"><a href="#cb10-307" aria-hidden="true" tabindex="-1"></a>commercial, industrial or non-consumer uses, unless such uses represent</span>
+<span id="cb10-308"><a href="#cb10-308" aria-hidden="true" tabindex="-1"></a>the only significant mode of use of the product.</span>
+<span id="cb10-309"><a href="#cb10-309" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-310"><a href="#cb10-310" aria-hidden="true" tabindex="-1"></a>  "Installation Information" for a User Product means any methods,</span>
+<span id="cb10-311"><a href="#cb10-311" aria-hidden="true" tabindex="-1"></a>procedures, authorization keys, or other information required to install</span>
+<span id="cb10-312"><a href="#cb10-312" aria-hidden="true" tabindex="-1"></a>and execute modified versions of a covered work in that User Product from</span>
+<span id="cb10-313"><a href="#cb10-313" aria-hidden="true" tabindex="-1"></a>a modified version of its Corresponding Source.  The information must</span>
+<span id="cb10-314"><a href="#cb10-314" aria-hidden="true" tabindex="-1"></a>suffice to ensure that the continued functioning of the modified object</span>
+<span id="cb10-315"><a href="#cb10-315" aria-hidden="true" tabindex="-1"></a>code is in no case prevented or interfered with solely because</span>
+<span id="cb10-316"><a href="#cb10-316" aria-hidden="true" tabindex="-1"></a>modification has been made.</span>
+<span id="cb10-317"><a href="#cb10-317" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-318"><a href="#cb10-318" aria-hidden="true" tabindex="-1"></a>  If you convey an object code work under this section in, or with, or</span>
+<span id="cb10-319"><a href="#cb10-319" aria-hidden="true" tabindex="-1"></a>specifically for use in, a User Product, and the conveying occurs as</span>
+<span id="cb10-320"><a href="#cb10-320" aria-hidden="true" tabindex="-1"></a>part of a transaction in which the right of possession and use of the</span>
+<span id="cb10-321"><a href="#cb10-321" aria-hidden="true" tabindex="-1"></a>User Product is transferred to the recipient in perpetuity or for a</span>
+<span id="cb10-322"><a href="#cb10-322" aria-hidden="true" tabindex="-1"></a>fixed term (regardless of how the transaction is characterized), the</span>
+<span id="cb10-323"><a href="#cb10-323" aria-hidden="true" tabindex="-1"></a>Corresponding Source conveyed under this section must be accompanied</span>
+<span id="cb10-324"><a href="#cb10-324" aria-hidden="true" tabindex="-1"></a>by the Installation Information.  But this requirement does not apply</span>
+<span id="cb10-325"><a href="#cb10-325" aria-hidden="true" tabindex="-1"></a>if neither you nor any third party retains the ability to install</span>
+<span id="cb10-326"><a href="#cb10-326" aria-hidden="true" tabindex="-1"></a>modified object code on the User Product (for example, the work has</span>
+<span id="cb10-327"><a href="#cb10-327" aria-hidden="true" tabindex="-1"></a>been installed in ROM).</span>
+<span id="cb10-328"><a href="#cb10-328" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-329"><a href="#cb10-329" aria-hidden="true" tabindex="-1"></a>  The requirement to provide Installation Information does not include a</span>
+<span id="cb10-330"><a href="#cb10-330" aria-hidden="true" tabindex="-1"></a>requirement to continue to provide support service, warranty, or updates</span>
+<span id="cb10-331"><a href="#cb10-331" aria-hidden="true" tabindex="-1"></a>for a work that has been modified or installed by the recipient, or for</span>
+<span id="cb10-332"><a href="#cb10-332" aria-hidden="true" tabindex="-1"></a>the User Product in which it has been modified or installed.  Access to a</span>
+<span id="cb10-333"><a href="#cb10-333" aria-hidden="true" tabindex="-1"></a>network may be denied when the modification itself materially and</span>
+<span id="cb10-334"><a href="#cb10-334" aria-hidden="true" tabindex="-1"></a>adversely affects the operation of the network or violates the rules and</span>
+<span id="cb10-335"><a href="#cb10-335" aria-hidden="true" tabindex="-1"></a>protocols for communication across the network.</span>
+<span id="cb10-336"><a href="#cb10-336" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-337"><a href="#cb10-337" aria-hidden="true" tabindex="-1"></a>  Corresponding Source conveyed, and Installation Information provided,</span>
+<span id="cb10-338"><a href="#cb10-338" aria-hidden="true" tabindex="-1"></a>in accord with this section must be in a format that is publicly</span>
+<span id="cb10-339"><a href="#cb10-339" aria-hidden="true" tabindex="-1"></a>documented (and with an implementation available to the public in</span>
+<span id="cb10-340"><a href="#cb10-340" aria-hidden="true" tabindex="-1"></a>source code form), and must require no special password or key for</span>
+<span id="cb10-341"><a href="#cb10-341" aria-hidden="true" tabindex="-1"></a>unpacking, reading or copying.</span>
+<span id="cb10-342"><a href="#cb10-342" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-343"><a href="#cb10-343" aria-hidden="true" tabindex="-1"></a><span class="ss">  7. </span>Additional Terms.</span>
+<span id="cb10-344"><a href="#cb10-344" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-345"><a href="#cb10-345" aria-hidden="true" tabindex="-1"></a>  "Additional permissions" are terms that supplement the terms of this</span>
+<span id="cb10-346"><a href="#cb10-346" aria-hidden="true" tabindex="-1"></a>License by making exceptions from one or more of its conditions.</span>
+<span id="cb10-347"><a href="#cb10-347" aria-hidden="true" tabindex="-1"></a>Additional permissions that are applicable to the entire Program shall</span>
+<span id="cb10-348"><a href="#cb10-348" aria-hidden="true" tabindex="-1"></a>be treated as though they were included in this License, to the extent</span>
+<span id="cb10-349"><a href="#cb10-349" aria-hidden="true" tabindex="-1"></a>that they are valid under applicable law.  If additional permissions</span>
+<span id="cb10-350"><a href="#cb10-350" aria-hidden="true" tabindex="-1"></a>apply only to part of the Program, that part may be used separately</span>
+<span id="cb10-351"><a href="#cb10-351" aria-hidden="true" tabindex="-1"></a>under those permissions, but the entire Program remains governed by</span>
+<span id="cb10-352"><a href="#cb10-352" aria-hidden="true" tabindex="-1"></a>this License without regard to the additional permissions.</span>
+<span id="cb10-353"><a href="#cb10-353" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-354"><a href="#cb10-354" aria-hidden="true" tabindex="-1"></a>  When you convey a copy of a covered work, you may at your option</span>
+<span id="cb10-355"><a href="#cb10-355" aria-hidden="true" tabindex="-1"></a>remove any additional permissions from that copy, or from any part of</span>
+<span id="cb10-356"><a href="#cb10-356" aria-hidden="true" tabindex="-1"></a>it.  (Additional permissions may be written to require their own</span>
+<span id="cb10-357"><a href="#cb10-357" aria-hidden="true" tabindex="-1"></a>removal in certain cases when you modify the work.)  You may place</span>
+<span id="cb10-358"><a href="#cb10-358" aria-hidden="true" tabindex="-1"></a>additional permissions on material, added by you to a covered work,</span>
+<span id="cb10-359"><a href="#cb10-359" aria-hidden="true" tabindex="-1"></a>for which you have or can give appropriate copyright permission.</span>
+<span id="cb10-360"><a href="#cb10-360" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-361"><a href="#cb10-361" aria-hidden="true" tabindex="-1"></a>  Notwithstanding any other provision of this License, for material you</span>
+<span id="cb10-362"><a href="#cb10-362" aria-hidden="true" tabindex="-1"></a>add to a covered work, you may (if authorized by the copyright holders of</span>
+<span id="cb10-363"><a href="#cb10-363" aria-hidden="true" tabindex="-1"></a>that material) supplement the terms of this License with terms:</span>
+<span id="cb10-364"><a href="#cb10-364" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-365"><a href="#cb10-365" aria-hidden="true" tabindex="-1"></a><span class="in">    a) Disclaiming warranty or limiting liability differently from the</span></span>
+<span id="cb10-366"><a href="#cb10-366" aria-hidden="true" tabindex="-1"></a><span class="in">    terms of sections 15 and 16 of this License; or</span></span>
+<span id="cb10-367"><a href="#cb10-367" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-368"><a href="#cb10-368" aria-hidden="true" tabindex="-1"></a><span class="in">    b) Requiring preservation of specified reasonable legal notices or</span></span>
+<span id="cb10-369"><a href="#cb10-369" aria-hidden="true" tabindex="-1"></a><span class="in">    author attributions in that material or in the Appropriate Legal</span></span>
+<span id="cb10-370"><a href="#cb10-370" aria-hidden="true" tabindex="-1"></a><span class="in">    Notices displayed by works containing it; or</span></span>
+<span id="cb10-371"><a href="#cb10-371" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-372"><a href="#cb10-372" aria-hidden="true" tabindex="-1"></a><span class="in">    c) Prohibiting misrepresentation of the origin of that material, or</span></span>
+<span id="cb10-373"><a href="#cb10-373" aria-hidden="true" tabindex="-1"></a><span class="in">    requiring that modified versions of such material be marked in</span></span>
+<span id="cb10-374"><a href="#cb10-374" aria-hidden="true" tabindex="-1"></a><span class="in">    reasonable ways as different from the original version; or</span></span>
+<span id="cb10-375"><a href="#cb10-375" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-376"><a href="#cb10-376" aria-hidden="true" tabindex="-1"></a><span class="in">    d) Limiting the use for publicity purposes of names of licensors or</span></span>
+<span id="cb10-377"><a href="#cb10-377" aria-hidden="true" tabindex="-1"></a><span class="in">    authors of the material; or</span></span>
+<span id="cb10-378"><a href="#cb10-378" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-379"><a href="#cb10-379" aria-hidden="true" tabindex="-1"></a><span class="in">    e) Declining to grant rights under trademark law for use of some</span></span>
+<span id="cb10-380"><a href="#cb10-380" aria-hidden="true" tabindex="-1"></a><span class="in">    trade names, trademarks, or service marks; or</span></span>
+<span id="cb10-381"><a href="#cb10-381" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-382"><a href="#cb10-382" aria-hidden="true" tabindex="-1"></a><span class="in">    f) Requiring indemnification of licensors and authors of that</span></span>
+<span id="cb10-383"><a href="#cb10-383" aria-hidden="true" tabindex="-1"></a><span class="in">    material by anyone who conveys the material (or modified versions of</span></span>
+<span id="cb10-384"><a href="#cb10-384" aria-hidden="true" tabindex="-1"></a><span class="in">    it) with contractual assumptions of liability to the recipient, for</span></span>
+<span id="cb10-385"><a href="#cb10-385" aria-hidden="true" tabindex="-1"></a><span class="in">    any liability that these contractual assumptions directly impose on</span></span>
+<span id="cb10-386"><a href="#cb10-386" aria-hidden="true" tabindex="-1"></a><span class="in">    those licensors and authors.</span></span>
+<span id="cb10-387"><a href="#cb10-387" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-388"><a href="#cb10-388" aria-hidden="true" tabindex="-1"></a>  All other non-permissive additional terms are considered "further</span>
+<span id="cb10-389"><a href="#cb10-389" aria-hidden="true" tabindex="-1"></a>restrictions" within the meaning of section 10.  If the Program as you</span>
+<span id="cb10-390"><a href="#cb10-390" aria-hidden="true" tabindex="-1"></a>received it, or any part of it, contains a notice stating that it is</span>
+<span id="cb10-391"><a href="#cb10-391" aria-hidden="true" tabindex="-1"></a>governed by this License along with a term that is a further</span>
+<span id="cb10-392"><a href="#cb10-392" aria-hidden="true" tabindex="-1"></a>restriction, you may remove that term.  If a license document contains</span>
+<span id="cb10-393"><a href="#cb10-393" aria-hidden="true" tabindex="-1"></a>a further restriction but permits relicensing or conveying under this</span>
+<span id="cb10-394"><a href="#cb10-394" aria-hidden="true" tabindex="-1"></a>License, you may add to a covered work material governed by the terms</span>
+<span id="cb10-395"><a href="#cb10-395" aria-hidden="true" tabindex="-1"></a>of that license document, provided that the further restriction does</span>
+<span id="cb10-396"><a href="#cb10-396" aria-hidden="true" tabindex="-1"></a>not survive such relicensing or conveying.</span>
+<span id="cb10-397"><a href="#cb10-397" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-398"><a href="#cb10-398" aria-hidden="true" tabindex="-1"></a>  If you add terms to a covered work in accord with this section, you</span>
+<span id="cb10-399"><a href="#cb10-399" aria-hidden="true" tabindex="-1"></a>must place, in the relevant source files, a statement of the</span>
+<span id="cb10-400"><a href="#cb10-400" aria-hidden="true" tabindex="-1"></a>additional terms that apply to those files, or a notice indicating</span>
+<span id="cb10-401"><a href="#cb10-401" aria-hidden="true" tabindex="-1"></a>where to find the applicable terms.</span>
+<span id="cb10-402"><a href="#cb10-402" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-403"><a href="#cb10-403" aria-hidden="true" tabindex="-1"></a>  Additional terms, permissive or non-permissive, may be stated in the</span>
+<span id="cb10-404"><a href="#cb10-404" aria-hidden="true" tabindex="-1"></a>form of a separately written license, or stated as exceptions;</span>
+<span id="cb10-405"><a href="#cb10-405" aria-hidden="true" tabindex="-1"></a>the above requirements apply either way.</span>
+<span id="cb10-406"><a href="#cb10-406" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-407"><a href="#cb10-407" aria-hidden="true" tabindex="-1"></a><span class="ss">  8. </span>Termination.</span>
+<span id="cb10-408"><a href="#cb10-408" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-409"><a href="#cb10-409" aria-hidden="true" tabindex="-1"></a>  You may not propagate or modify a covered work except as expressly</span>
+<span id="cb10-410"><a href="#cb10-410" aria-hidden="true" tabindex="-1"></a>provided under this License.  Any attempt otherwise to propagate or</span>
+<span id="cb10-411"><a href="#cb10-411" aria-hidden="true" tabindex="-1"></a>modify it is void, and will automatically terminate your rights under</span>
+<span id="cb10-412"><a href="#cb10-412" aria-hidden="true" tabindex="-1"></a>this License (including any patent licenses granted under the third</span>
+<span id="cb10-413"><a href="#cb10-413" aria-hidden="true" tabindex="-1"></a>paragraph of section 11).</span>
+<span id="cb10-414"><a href="#cb10-414" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-415"><a href="#cb10-415" aria-hidden="true" tabindex="-1"></a>  However, if you cease all violation of this License, then your</span>
+<span id="cb10-416"><a href="#cb10-416" aria-hidden="true" tabindex="-1"></a>license from a particular copyright holder is reinstated (a)</span>
+<span id="cb10-417"><a href="#cb10-417" aria-hidden="true" tabindex="-1"></a>provisionally, unless and until the copyright holder explicitly and</span>
+<span id="cb10-418"><a href="#cb10-418" aria-hidden="true" tabindex="-1"></a>finally terminates your license, and (b) permanently, if the copyright</span>
+<span id="cb10-419"><a href="#cb10-419" aria-hidden="true" tabindex="-1"></a>holder fails to notify you of the violation by some reasonable means</span>
+<span id="cb10-420"><a href="#cb10-420" aria-hidden="true" tabindex="-1"></a>prior to 60 days after the cessation.</span>
+<span id="cb10-421"><a href="#cb10-421" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-422"><a href="#cb10-422" aria-hidden="true" tabindex="-1"></a>  Moreover, your license from a particular copyright holder is</span>
+<span id="cb10-423"><a href="#cb10-423" aria-hidden="true" tabindex="-1"></a>reinstated permanently if the copyright holder notifies you of the</span>
+<span id="cb10-424"><a href="#cb10-424" aria-hidden="true" tabindex="-1"></a>violation by some reasonable means, this is the first time you have</span>
+<span id="cb10-425"><a href="#cb10-425" aria-hidden="true" tabindex="-1"></a>received notice of violation of this License (for any work) from that</span>
+<span id="cb10-426"><a href="#cb10-426" aria-hidden="true" tabindex="-1"></a>copyright holder, and you cure the violation prior to 30 days after</span>
+<span id="cb10-427"><a href="#cb10-427" aria-hidden="true" tabindex="-1"></a>your receipt of the notice.</span>
+<span id="cb10-428"><a href="#cb10-428" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-429"><a href="#cb10-429" aria-hidden="true" tabindex="-1"></a>  Termination of your rights under this section does not terminate the</span>
+<span id="cb10-430"><a href="#cb10-430" aria-hidden="true" tabindex="-1"></a>licenses of parties who have received copies or rights from you under</span>
+<span id="cb10-431"><a href="#cb10-431" aria-hidden="true" tabindex="-1"></a>this License.  If your rights have been terminated and not permanently</span>
+<span id="cb10-432"><a href="#cb10-432" aria-hidden="true" tabindex="-1"></a>reinstated, you do not qualify to receive new licenses for the same</span>
+<span id="cb10-433"><a href="#cb10-433" aria-hidden="true" tabindex="-1"></a>material under section 10.</span>
+<span id="cb10-434"><a href="#cb10-434" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-435"><a href="#cb10-435" aria-hidden="true" tabindex="-1"></a><span class="ss">  9. </span>Acceptance Not Required for Having Copies.</span>
+<span id="cb10-436"><a href="#cb10-436" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-437"><a href="#cb10-437" aria-hidden="true" tabindex="-1"></a>  You are not required to accept this License in order to receive or</span>
+<span id="cb10-438"><a href="#cb10-438" aria-hidden="true" tabindex="-1"></a>run a copy of the Program.  Ancillary propagation of a covered work</span>
+<span id="cb10-439"><a href="#cb10-439" aria-hidden="true" tabindex="-1"></a>occurring solely as a consequence of using peer-to-peer transmission</span>
+<span id="cb10-440"><a href="#cb10-440" aria-hidden="true" tabindex="-1"></a>to receive a copy likewise does not require acceptance.  However,</span>
+<span id="cb10-441"><a href="#cb10-441" aria-hidden="true" tabindex="-1"></a>nothing other than this License grants you permission to propagate or</span>
+<span id="cb10-442"><a href="#cb10-442" aria-hidden="true" tabindex="-1"></a>modify any covered work.  These actions infringe copyright if you do</span>
+<span id="cb10-443"><a href="#cb10-443" aria-hidden="true" tabindex="-1"></a>not accept this License.  Therefore, by modifying or propagating a</span>
+<span id="cb10-444"><a href="#cb10-444" aria-hidden="true" tabindex="-1"></a>covered work, you indicate your acceptance of this License to do so.</span>
+<span id="cb10-445"><a href="#cb10-445" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-446"><a href="#cb10-446" aria-hidden="true" tabindex="-1"></a><span class="ss">  10. </span>Automatic Licensing of Downstream Recipients.</span>
+<span id="cb10-447"><a href="#cb10-447" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-448"><a href="#cb10-448" aria-hidden="true" tabindex="-1"></a>  Each time you convey a covered work, the recipient automatically</span>
+<span id="cb10-449"><a href="#cb10-449" aria-hidden="true" tabindex="-1"></a>receives a license from the original licensors, to run, modify and</span>
+<span id="cb10-450"><a href="#cb10-450" aria-hidden="true" tabindex="-1"></a>propagate that work, subject to this License.  You are not responsible</span>
+<span id="cb10-451"><a href="#cb10-451" aria-hidden="true" tabindex="-1"></a>for enforcing compliance by third parties with this License.</span>
+<span id="cb10-452"><a href="#cb10-452" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-453"><a href="#cb10-453" aria-hidden="true" tabindex="-1"></a>  An "entity transaction" is a transaction transferring control of an</span>
+<span id="cb10-454"><a href="#cb10-454" aria-hidden="true" tabindex="-1"></a>organization, or substantially all assets of one, or subdividing an</span>
+<span id="cb10-455"><a href="#cb10-455" aria-hidden="true" tabindex="-1"></a>organization, or merging organizations.  If propagation of a covered</span>
+<span id="cb10-456"><a href="#cb10-456" aria-hidden="true" tabindex="-1"></a>work results from an entity transaction, each party to that</span>
+<span id="cb10-457"><a href="#cb10-457" aria-hidden="true" tabindex="-1"></a>transaction who receives a copy of the work also receives whatever</span>
+<span id="cb10-458"><a href="#cb10-458" aria-hidden="true" tabindex="-1"></a>licenses to the work the party's predecessor in interest had or could</span>
+<span id="cb10-459"><a href="#cb10-459" aria-hidden="true" tabindex="-1"></a>give under the previous paragraph, plus a right to possession of the</span>
+<span id="cb10-460"><a href="#cb10-460" aria-hidden="true" tabindex="-1"></a>Corresponding Source of the work from the predecessor in interest, if</span>
+<span id="cb10-461"><a href="#cb10-461" aria-hidden="true" tabindex="-1"></a>the predecessor has it or can get it with reasonable efforts.</span>
+<span id="cb10-462"><a href="#cb10-462" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-463"><a href="#cb10-463" aria-hidden="true" tabindex="-1"></a>  You may not impose any further restrictions on the exercise of the</span>
+<span id="cb10-464"><a href="#cb10-464" aria-hidden="true" tabindex="-1"></a>rights granted or affirmed under this License.  For example, you may</span>
+<span id="cb10-465"><a href="#cb10-465" aria-hidden="true" tabindex="-1"></a>not impose a license fee, royalty, or other charge for exercise of</span>
+<span id="cb10-466"><a href="#cb10-466" aria-hidden="true" tabindex="-1"></a>rights granted under this License, and you may not initiate litigation</span>
+<span id="cb10-467"><a href="#cb10-467" aria-hidden="true" tabindex="-1"></a>(including a cross-claim or counterclaim in a lawsuit) alleging that</span>
+<span id="cb10-468"><a href="#cb10-468" aria-hidden="true" tabindex="-1"></a>any patent claim is infringed by making, using, selling, offering for</span>
+<span id="cb10-469"><a href="#cb10-469" aria-hidden="true" tabindex="-1"></a>sale, or importing the Program or any portion of it.</span>
+<span id="cb10-470"><a href="#cb10-470" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-471"><a href="#cb10-471" aria-hidden="true" tabindex="-1"></a><span class="ss">  11. </span>Patents.</span>
+<span id="cb10-472"><a href="#cb10-472" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-473"><a href="#cb10-473" aria-hidden="true" tabindex="-1"></a>  A "contributor" is a copyright holder who authorizes use under this</span>
+<span id="cb10-474"><a href="#cb10-474" aria-hidden="true" tabindex="-1"></a>License of the Program or a work on which the Program is based.  The</span>
+<span id="cb10-475"><a href="#cb10-475" aria-hidden="true" tabindex="-1"></a>work thus licensed is called the contributor's "contributor version".</span>
+<span id="cb10-476"><a href="#cb10-476" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-477"><a href="#cb10-477" aria-hidden="true" tabindex="-1"></a>  A contributor's "essential patent claims" are all patent claims</span>
+<span id="cb10-478"><a href="#cb10-478" aria-hidden="true" tabindex="-1"></a>owned or controlled by the contributor, whether already acquired or</span>
+<span id="cb10-479"><a href="#cb10-479" aria-hidden="true" tabindex="-1"></a>hereafter acquired, that would be infringed by some manner, permitted</span>
+<span id="cb10-480"><a href="#cb10-480" aria-hidden="true" tabindex="-1"></a>by this License, of making, using, or selling its contributor version,</span>
+<span id="cb10-481"><a href="#cb10-481" aria-hidden="true" tabindex="-1"></a>but do not include claims that would be infringed only as a</span>
+<span id="cb10-482"><a href="#cb10-482" aria-hidden="true" tabindex="-1"></a>consequence of further modification of the contributor version.  For</span>
+<span id="cb10-483"><a href="#cb10-483" aria-hidden="true" tabindex="-1"></a>purposes of this definition, "control" includes the right to grant</span>
+<span id="cb10-484"><a href="#cb10-484" aria-hidden="true" tabindex="-1"></a>patent sublicenses in a manner consistent with the requirements of</span>
+<span id="cb10-485"><a href="#cb10-485" aria-hidden="true" tabindex="-1"></a>this License.</span>
+<span id="cb10-486"><a href="#cb10-486" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-487"><a href="#cb10-487" aria-hidden="true" tabindex="-1"></a>  Each contributor grants you a non-exclusive, worldwide, royalty-free</span>
+<span id="cb10-488"><a href="#cb10-488" aria-hidden="true" tabindex="-1"></a>patent license under the contributor's essential patent claims, to</span>
+<span id="cb10-489"><a href="#cb10-489" aria-hidden="true" tabindex="-1"></a>make, use, sell, offer for sale, import and otherwise run, modify and</span>
+<span id="cb10-490"><a href="#cb10-490" aria-hidden="true" tabindex="-1"></a>propagate the contents of its contributor version.</span>
+<span id="cb10-491"><a href="#cb10-491" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-492"><a href="#cb10-492" aria-hidden="true" tabindex="-1"></a>  In the following three paragraphs, a "patent license" is any express</span>
+<span id="cb10-493"><a href="#cb10-493" aria-hidden="true" tabindex="-1"></a>agreement or commitment, however denominated, not to enforce a patent</span>
+<span id="cb10-494"><a href="#cb10-494" aria-hidden="true" tabindex="-1"></a>(such as an express permission to practice a patent or covenant not to</span>
+<span id="cb10-495"><a href="#cb10-495" aria-hidden="true" tabindex="-1"></a>sue for patent infringement).  To "grant" such a patent license to a</span>
+<span id="cb10-496"><a href="#cb10-496" aria-hidden="true" tabindex="-1"></a>party means to make such an agreement or commitment not to enforce a</span>
+<span id="cb10-497"><a href="#cb10-497" aria-hidden="true" tabindex="-1"></a>patent against the party.</span>
+<span id="cb10-498"><a href="#cb10-498" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-499"><a href="#cb10-499" aria-hidden="true" tabindex="-1"></a>  If you convey a covered work, knowingly relying on a patent license,</span>
+<span id="cb10-500"><a href="#cb10-500" aria-hidden="true" tabindex="-1"></a>and the Corresponding Source of the work is not available for anyone</span>
+<span id="cb10-501"><a href="#cb10-501" aria-hidden="true" tabindex="-1"></a>to copy, free of charge and under the terms of this License, through a</span>
+<span id="cb10-502"><a href="#cb10-502" aria-hidden="true" tabindex="-1"></a>publicly available network server or other readily accessible means,</span>
+<span id="cb10-503"><a href="#cb10-503" aria-hidden="true" tabindex="-1"></a>then you must either (1) cause the Corresponding Source to be so</span>
+<span id="cb10-504"><a href="#cb10-504" aria-hidden="true" tabindex="-1"></a>available, or (2) arrange to deprive yourself of the benefit of the</span>
+<span id="cb10-505"><a href="#cb10-505" aria-hidden="true" tabindex="-1"></a>patent license for this particular work, or (3) arrange, in a manner</span>
+<span id="cb10-506"><a href="#cb10-506" aria-hidden="true" tabindex="-1"></a>consistent with the requirements of this License, to extend the patent</span>
+<span id="cb10-507"><a href="#cb10-507" aria-hidden="true" tabindex="-1"></a>license to downstream recipients.  "Knowingly relying" means you have</span>
+<span id="cb10-508"><a href="#cb10-508" aria-hidden="true" tabindex="-1"></a>actual knowledge that, but for the patent license, your conveying the</span>
+<span id="cb10-509"><a href="#cb10-509" aria-hidden="true" tabindex="-1"></a>covered work in a country, or your recipient's use of the covered work</span>
+<span id="cb10-510"><a href="#cb10-510" aria-hidden="true" tabindex="-1"></a>in a country, would infringe one or more identifiable patents in that</span>
+<span id="cb10-511"><a href="#cb10-511" aria-hidden="true" tabindex="-1"></a>country that you have reason to believe are valid.</span>
+<span id="cb10-512"><a href="#cb10-512" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-513"><a href="#cb10-513" aria-hidden="true" tabindex="-1"></a>  If, pursuant to or in connection with a single transaction or</span>
+<span id="cb10-514"><a href="#cb10-514" aria-hidden="true" tabindex="-1"></a>arrangement, you convey, or propagate by procuring conveyance of, a</span>
+<span id="cb10-515"><a href="#cb10-515" aria-hidden="true" tabindex="-1"></a>covered work, and grant a patent license to some of the parties</span>
+<span id="cb10-516"><a href="#cb10-516" aria-hidden="true" tabindex="-1"></a>receiving the covered work authorizing them to use, propagate, modify</span>
+<span id="cb10-517"><a href="#cb10-517" aria-hidden="true" tabindex="-1"></a>or convey a specific copy of the covered work, then the patent license</span>
+<span id="cb10-518"><a href="#cb10-518" aria-hidden="true" tabindex="-1"></a>you grant is automatically extended to all recipients of the covered</span>
+<span id="cb10-519"><a href="#cb10-519" aria-hidden="true" tabindex="-1"></a>work and works based on it.</span>
+<span id="cb10-520"><a href="#cb10-520" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-521"><a href="#cb10-521" aria-hidden="true" tabindex="-1"></a>  A patent license is "discriminatory" if it does not include within</span>
+<span id="cb10-522"><a href="#cb10-522" aria-hidden="true" tabindex="-1"></a>the scope of its coverage, prohibits the exercise of, or is</span>
+<span id="cb10-523"><a href="#cb10-523" aria-hidden="true" tabindex="-1"></a>conditioned on the non-exercise of one or more of the rights that are</span>
+<span id="cb10-524"><a href="#cb10-524" aria-hidden="true" tabindex="-1"></a>specifically granted under this License.  You may not convey a covered</span>
+<span id="cb10-525"><a href="#cb10-525" aria-hidden="true" tabindex="-1"></a>work if you are a party to an arrangement with a third party that is</span>
+<span id="cb10-526"><a href="#cb10-526" aria-hidden="true" tabindex="-1"></a>in the business of distributing software, under which you make payment</span>
+<span id="cb10-527"><a href="#cb10-527" aria-hidden="true" tabindex="-1"></a>to the third party based on the extent of your activity of conveying</span>
+<span id="cb10-528"><a href="#cb10-528" aria-hidden="true" tabindex="-1"></a>the work, and under which the third party grants, to any of the</span>
+<span id="cb10-529"><a href="#cb10-529" aria-hidden="true" tabindex="-1"></a>parties who would receive the covered work from you, a discriminatory</span>
+<span id="cb10-530"><a href="#cb10-530" aria-hidden="true" tabindex="-1"></a>patent license (a) in connection with copies of the covered work</span>
+<span id="cb10-531"><a href="#cb10-531" aria-hidden="true" tabindex="-1"></a>conveyed by you (or copies made from those copies), or (b) primarily</span>
+<span id="cb10-532"><a href="#cb10-532" aria-hidden="true" tabindex="-1"></a>for and in connection with specific products or compilations that</span>
+<span id="cb10-533"><a href="#cb10-533" aria-hidden="true" tabindex="-1"></a>contain the covered work, unless you entered into that arrangement,</span>
+<span id="cb10-534"><a href="#cb10-534" aria-hidden="true" tabindex="-1"></a>or that patent license was granted, prior to 28 March 2007.</span>
+<span id="cb10-535"><a href="#cb10-535" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-536"><a href="#cb10-536" aria-hidden="true" tabindex="-1"></a>  Nothing in this License shall be construed as excluding or limiting</span>
+<span id="cb10-537"><a href="#cb10-537" aria-hidden="true" tabindex="-1"></a>any implied license or other defenses to infringement that may</span>
+<span id="cb10-538"><a href="#cb10-538" aria-hidden="true" tabindex="-1"></a>otherwise be available to you under applicable patent law.</span>
+<span id="cb10-539"><a href="#cb10-539" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-540"><a href="#cb10-540" aria-hidden="true" tabindex="-1"></a><span class="ss">  12. </span>No Surrender of Others' Freedom.</span>
+<span id="cb10-541"><a href="#cb10-541" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-542"><a href="#cb10-542" aria-hidden="true" tabindex="-1"></a>  If conditions are imposed on you (whether by court order, agreement or</span>
+<span id="cb10-543"><a href="#cb10-543" aria-hidden="true" tabindex="-1"></a>otherwise) that contradict the conditions of this License, they do not</span>
+<span id="cb10-544"><a href="#cb10-544" aria-hidden="true" tabindex="-1"></a>excuse you from the conditions of this License.  If you cannot convey a</span>
+<span id="cb10-545"><a href="#cb10-545" aria-hidden="true" tabindex="-1"></a>covered work so as to satisfy simultaneously your obligations under this</span>
+<span id="cb10-546"><a href="#cb10-546" aria-hidden="true" tabindex="-1"></a>License and any other pertinent obligations, then as a consequence you may</span>
+<span id="cb10-547"><a href="#cb10-547" aria-hidden="true" tabindex="-1"></a>not convey it at all.  For example, if you agree to terms that obligate you</span>
+<span id="cb10-548"><a href="#cb10-548" aria-hidden="true" tabindex="-1"></a>to collect a royalty for further conveying from those to whom you convey</span>
+<span id="cb10-549"><a href="#cb10-549" aria-hidden="true" tabindex="-1"></a>the Program, the only way you could satisfy both those terms and this</span>
+<span id="cb10-550"><a href="#cb10-550" aria-hidden="true" tabindex="-1"></a>License would be to refrain entirely from conveying the Program.</span>
+<span id="cb10-551"><a href="#cb10-551" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-552"><a href="#cb10-552" aria-hidden="true" tabindex="-1"></a><span class="ss">  13. </span>Use with the GNU Affero General Public License.</span>
+<span id="cb10-553"><a href="#cb10-553" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-554"><a href="#cb10-554" aria-hidden="true" tabindex="-1"></a>  Notwithstanding any other provision of this License, you have</span>
+<span id="cb10-555"><a href="#cb10-555" aria-hidden="true" tabindex="-1"></a>permission to link or combine any covered work with a work licensed</span>
+<span id="cb10-556"><a href="#cb10-556" aria-hidden="true" tabindex="-1"></a>under version 3 of the GNU Affero General Public License into a single</span>
+<span id="cb10-557"><a href="#cb10-557" aria-hidden="true" tabindex="-1"></a>combined work, and to convey the resulting work.  The terms of this</span>
+<span id="cb10-558"><a href="#cb10-558" aria-hidden="true" tabindex="-1"></a>License will continue to apply to the part which is the covered work,</span>
+<span id="cb10-559"><a href="#cb10-559" aria-hidden="true" tabindex="-1"></a>but the special requirements of the GNU Affero General Public License,</span>
+<span id="cb10-560"><a href="#cb10-560" aria-hidden="true" tabindex="-1"></a>section 13, concerning interaction through a network will apply to the</span>
+<span id="cb10-561"><a href="#cb10-561" aria-hidden="true" tabindex="-1"></a>combination as such.</span>
+<span id="cb10-562"><a href="#cb10-562" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-563"><a href="#cb10-563" aria-hidden="true" tabindex="-1"></a><span class="ss">  14. </span>Revised Versions of this License.</span>
+<span id="cb10-564"><a href="#cb10-564" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-565"><a href="#cb10-565" aria-hidden="true" tabindex="-1"></a>  The Free Software Foundation may publish revised and/or new versions of</span>
+<span id="cb10-566"><a href="#cb10-566" aria-hidden="true" tabindex="-1"></a>the GNU General Public License from time to time.  Such new versions will</span>
+<span id="cb10-567"><a href="#cb10-567" aria-hidden="true" tabindex="-1"></a>be similar in spirit to the present version, but may differ in detail to</span>
+<span id="cb10-568"><a href="#cb10-568" aria-hidden="true" tabindex="-1"></a>address new problems or concerns.</span>
+<span id="cb10-569"><a href="#cb10-569" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-570"><a href="#cb10-570" aria-hidden="true" tabindex="-1"></a>  Each version is given a distinguishing version number.  If the</span>
+<span id="cb10-571"><a href="#cb10-571" aria-hidden="true" tabindex="-1"></a>Program specifies that a certain numbered version of the GNU General</span>
+<span id="cb10-572"><a href="#cb10-572" aria-hidden="true" tabindex="-1"></a>Public License "or any later version" applies to it, you have the</span>
+<span id="cb10-573"><a href="#cb10-573" aria-hidden="true" tabindex="-1"></a>option of following the terms and conditions either of that numbered</span>
+<span id="cb10-574"><a href="#cb10-574" aria-hidden="true" tabindex="-1"></a>version or of any later version published by the Free Software</span>
+<span id="cb10-575"><a href="#cb10-575" aria-hidden="true" tabindex="-1"></a>Foundation.  If the Program does not specify a version number of the</span>
+<span id="cb10-576"><a href="#cb10-576" aria-hidden="true" tabindex="-1"></a>GNU General Public License, you may choose any version ever published</span>
+<span id="cb10-577"><a href="#cb10-577" aria-hidden="true" tabindex="-1"></a>by the Free Software Foundation.</span>
+<span id="cb10-578"><a href="#cb10-578" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-579"><a href="#cb10-579" aria-hidden="true" tabindex="-1"></a>  If the Program specifies that a proxy can decide which future</span>
+<span id="cb10-580"><a href="#cb10-580" aria-hidden="true" tabindex="-1"></a>versions of the GNU General Public License can be used, that proxy's</span>
+<span id="cb10-581"><a href="#cb10-581" aria-hidden="true" tabindex="-1"></a>public statement of acceptance of a version permanently authorizes you</span>
+<span id="cb10-582"><a href="#cb10-582" aria-hidden="true" tabindex="-1"></a>to choose that version for the Program.</span>
+<span id="cb10-583"><a href="#cb10-583" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-584"><a href="#cb10-584" aria-hidden="true" tabindex="-1"></a>  Later license versions may give you additional or different</span>
+<span id="cb10-585"><a href="#cb10-585" aria-hidden="true" tabindex="-1"></a>permissions.  However, no additional obligations are imposed on any</span>
+<span id="cb10-586"><a href="#cb10-586" aria-hidden="true" tabindex="-1"></a>author or copyright holder as a result of your choosing to follow a</span>
+<span id="cb10-587"><a href="#cb10-587" aria-hidden="true" tabindex="-1"></a>later version.</span>
+<span id="cb10-588"><a href="#cb10-588" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-589"><a href="#cb10-589" aria-hidden="true" tabindex="-1"></a><span class="ss">  15. </span>Disclaimer of Warranty.</span>
+<span id="cb10-590"><a href="#cb10-590" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-591"><a href="#cb10-591" aria-hidden="true" tabindex="-1"></a>  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY</span>
+<span id="cb10-592"><a href="#cb10-592" aria-hidden="true" tabindex="-1"></a>APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT</span>
+<span id="cb10-593"><a href="#cb10-593" aria-hidden="true" tabindex="-1"></a>HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY</span>
+<span id="cb10-594"><a href="#cb10-594" aria-hidden="true" tabindex="-1"></a>OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,</span>
+<span id="cb10-595"><a href="#cb10-595" aria-hidden="true" tabindex="-1"></a>THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR</span>
+<span id="cb10-596"><a href="#cb10-596" aria-hidden="true" tabindex="-1"></a>PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM</span>
+<span id="cb10-597"><a href="#cb10-597" aria-hidden="true" tabindex="-1"></a>IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF</span>
+<span id="cb10-598"><a href="#cb10-598" aria-hidden="true" tabindex="-1"></a>ALL NECESSARY SERVICING, REPAIR OR CORRECTION.</span>
+<span id="cb10-599"><a href="#cb10-599" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-600"><a href="#cb10-600" aria-hidden="true" tabindex="-1"></a><span class="ss">  16. </span>Limitation of Liability.</span>
+<span id="cb10-601"><a href="#cb10-601" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-602"><a href="#cb10-602" aria-hidden="true" tabindex="-1"></a>  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING</span>
+<span id="cb10-603"><a href="#cb10-603" aria-hidden="true" tabindex="-1"></a>WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS</span>
+<span id="cb10-604"><a href="#cb10-604" aria-hidden="true" tabindex="-1"></a>THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY</span>
+<span id="cb10-605"><a href="#cb10-605" aria-hidden="true" tabindex="-1"></a>GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE</span>
+<span id="cb10-606"><a href="#cb10-606" aria-hidden="true" tabindex="-1"></a>USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF</span>
+<span id="cb10-607"><a href="#cb10-607" aria-hidden="true" tabindex="-1"></a>DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD</span>
+<span id="cb10-608"><a href="#cb10-608" aria-hidden="true" tabindex="-1"></a>PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),</span>
+<span id="cb10-609"><a href="#cb10-609" aria-hidden="true" tabindex="-1"></a>EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF</span>
+<span id="cb10-610"><a href="#cb10-610" aria-hidden="true" tabindex="-1"></a>SUCH DAMAGES.</span>
+<span id="cb10-611"><a href="#cb10-611" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-612"><a href="#cb10-612" aria-hidden="true" tabindex="-1"></a><span class="ss">  17. </span>Interpretation of Sections 15 and 16.</span>
+<span id="cb10-613"><a href="#cb10-613" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-614"><a href="#cb10-614" aria-hidden="true" tabindex="-1"></a>  If the disclaimer of warranty and limitation of liability provided</span>
+<span id="cb10-615"><a href="#cb10-615" aria-hidden="true" tabindex="-1"></a>above cannot be given local legal effect according to their terms,</span>
+<span id="cb10-616"><a href="#cb10-616" aria-hidden="true" tabindex="-1"></a>reviewing courts shall apply local law that most closely approximates</span>
+<span id="cb10-617"><a href="#cb10-617" aria-hidden="true" tabindex="-1"></a>an absolute waiver of all civil liability in connection with the</span>
+<span id="cb10-618"><a href="#cb10-618" aria-hidden="true" tabindex="-1"></a>Program, unless a warranty or assumption of liability accompanies a</span>
+<span id="cb10-619"><a href="#cb10-619" aria-hidden="true" tabindex="-1"></a>copy of the Program in return for a fee.</span>
+<span id="cb10-620"><a href="#cb10-620" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-621"><a href="#cb10-621" aria-hidden="true" tabindex="-1"></a><span class="in">                     END OF TERMS AND CONDITIONS</span></span>
+<span id="cb10-622"><a href="#cb10-622" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-623"><a href="#cb10-623" aria-hidden="true" tabindex="-1"></a><span class="in">            How to Apply These Terms to Your New Programs</span></span>
+<span id="cb10-624"><a href="#cb10-624" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-625"><a href="#cb10-625" aria-hidden="true" tabindex="-1"></a>  If you develop a new program, and you want it to be of the greatest</span>
+<span id="cb10-626"><a href="#cb10-626" aria-hidden="true" tabindex="-1"></a>possible use to the public, the best way to achieve this is to make it</span>
+<span id="cb10-627"><a href="#cb10-627" aria-hidden="true" tabindex="-1"></a>free software which everyone can redistribute and change under these terms.</span>
+<span id="cb10-628"><a href="#cb10-628" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-629"><a href="#cb10-629" aria-hidden="true" tabindex="-1"></a>  To do so, attach the following notices to the program.  It is safest</span>
+<span id="cb10-630"><a href="#cb10-630" aria-hidden="true" tabindex="-1"></a>to attach them to the start of each source file to most effectively</span>
+<span id="cb10-631"><a href="#cb10-631" aria-hidden="true" tabindex="-1"></a>state the exclusion of warranty; and each file should have at least</span>
+<span id="cb10-632"><a href="#cb10-632" aria-hidden="true" tabindex="-1"></a>the "copyright" line and a pointer to where the full notice is found.</span>
+<span id="cb10-633"><a href="#cb10-633" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-634"><a href="#cb10-634" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;one line to give the program's name and a brief idea of what it does.&gt;</span></span>
+<span id="cb10-635"><a href="#cb10-635" aria-hidden="true" tabindex="-1"></a><span class="in">    Copyright (C) &lt;year&gt;  &lt;name of author&gt;</span></span>
+<span id="cb10-636"><a href="#cb10-636" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-637"><a href="#cb10-637" aria-hidden="true" tabindex="-1"></a><span class="in">    This program is free software: you can redistribute it and/or modify</span></span>
+<span id="cb10-638"><a href="#cb10-638" aria-hidden="true" tabindex="-1"></a><span class="in">    it under the terms of the GNU General Public License as published by</span></span>
+<span id="cb10-639"><a href="#cb10-639" aria-hidden="true" tabindex="-1"></a><span class="in">    the Free Software Foundation, either version 3 of the License, or</span></span>
+<span id="cb10-640"><a href="#cb10-640" aria-hidden="true" tabindex="-1"></a><span class="in">    (at your option) any later version.</span></span>
+<span id="cb10-641"><a href="#cb10-641" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-642"><a href="#cb10-642" aria-hidden="true" tabindex="-1"></a><span class="in">    This program is distributed in the hope that it will be useful,</span></span>
+<span id="cb10-643"><a href="#cb10-643" aria-hidden="true" tabindex="-1"></a><span class="in">    but WITHOUT ANY WARRANTY; without even the implied warranty of</span></span>
+<span id="cb10-644"><a href="#cb10-644" aria-hidden="true" tabindex="-1"></a><span class="in">    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></span>
+<span id="cb10-645"><a href="#cb10-645" aria-hidden="true" tabindex="-1"></a><span class="in">    GNU General Public License for more details.</span></span>
+<span id="cb10-646"><a href="#cb10-646" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-647"><a href="#cb10-647" aria-hidden="true" tabindex="-1"></a><span class="in">    You should have received a copy of the GNU General Public License</span></span>
+<span id="cb10-648"><a href="#cb10-648" aria-hidden="true" tabindex="-1"></a><span class="in">    along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</span></span>
+<span id="cb10-649"><a href="#cb10-649" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-650"><a href="#cb10-650" aria-hidden="true" tabindex="-1"></a>Also add information on how to contact you by electronic and paper mail.</span>
+<span id="cb10-651"><a href="#cb10-651" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-652"><a href="#cb10-652" aria-hidden="true" tabindex="-1"></a>  If the program does terminal interaction, make it output a short</span>
+<span id="cb10-653"><a href="#cb10-653" aria-hidden="true" tabindex="-1"></a>notice like this when it starts in an interactive mode:</span>
+<span id="cb10-654"><a href="#cb10-654" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-655"><a href="#cb10-655" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;program&gt;  Copyright (C) &lt;year&gt;  &lt;name of author&gt;</span></span>
+<span id="cb10-656"><a href="#cb10-656" aria-hidden="true" tabindex="-1"></a><span class="in">    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.</span></span>
+<span id="cb10-657"><a href="#cb10-657" aria-hidden="true" tabindex="-1"></a><span class="in">    This is free software, and you are welcome to redistribute it</span></span>
+<span id="cb10-658"><a href="#cb10-658" aria-hidden="true" tabindex="-1"></a><span class="in">    under certain conditions; type `show c' for details.</span></span>
+<span id="cb10-659"><a href="#cb10-659" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-660"><a href="#cb10-660" aria-hidden="true" tabindex="-1"></a>The hypothetical commands <span class="in">`show w' and `</span>show c' should show the appropriate</span>
+<span id="cb10-661"><a href="#cb10-661" aria-hidden="true" tabindex="-1"></a>parts of the General Public License.  Of course, your program's commands</span>
+<span id="cb10-662"><a href="#cb10-662" aria-hidden="true" tabindex="-1"></a>might be different; for a GUI interface, you would use an "about box".</span>
+<span id="cb10-663"><a href="#cb10-663" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-664"><a href="#cb10-664" aria-hidden="true" tabindex="-1"></a>  You should also get your employer (if you work as a programmer) or school,</span>
+<span id="cb10-665"><a href="#cb10-665" aria-hidden="true" tabindex="-1"></a>if any, to sign a "copyright disclaimer" for the program, if necessary.</span>
+<span id="cb10-666"><a href="#cb10-666" aria-hidden="true" tabindex="-1"></a>For more information on this, and how to apply and follow the GNU GPL, see</span>
+<span id="cb10-667"><a href="#cb10-667" aria-hidden="true" tabindex="-1"></a><span class="ot">&lt;https://www.gnu.org/licenses/&gt;</span>.</span>
+<span id="cb10-668"><a href="#cb10-668" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-669"><a href="#cb10-669" aria-hidden="true" tabindex="-1"></a>  The GNU General Public License does not permit incorporating your program</span>
+<span id="cb10-670"><a href="#cb10-670" aria-hidden="true" tabindex="-1"></a>into proprietary programs.  If your program is a subroutine library, you</span>
+<span id="cb10-671"><a href="#cb10-671" aria-hidden="true" tabindex="-1"></a>may consider it more useful to permit linking proprietary applications with</span>
+<span id="cb10-672"><a href="#cb10-672" aria-hidden="true" tabindex="-1"></a>the library.  If this is what you want to do, use the GNU Lesser General</span>
+<span id="cb10-673"><a href="#cb10-673" aria-hidden="true" tabindex="-1"></a>Public License instead of this License.  But first, please read</span>
+<span id="cb10-674"><a href="#cb10-674" aria-hidden="true" tabindex="-1"></a><span class="ot">&lt;https://www.gnu.org/licenses/why-not-lgpl.html&gt;</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+</body></html>

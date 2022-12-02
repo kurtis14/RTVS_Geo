@@ -7,7 +7,7 @@ title: "CHSA"
 #| include: false
 
 ### load packages
-pacman::p_load(plyr, tidyverse, sf, leaflet, fontawesome, GGally, DT)
+pacman::p_load(plyr, tidyverse, sf, leaflet, fontawesome, GGally, DT, plotly)
 
 ### load data
 # hospitals
@@ -36,7 +36,7 @@ ggplot(chsa) +
 
 ```
 
-## Interactive Map
+## Interactive Maps
 
 ```{r}
 #| label: fig-interactive-CHSA
@@ -79,6 +79,25 @@ leaflet() %>%
              opacity = 1, radius = 10, stroke = T,
              highlightOptions = highlightOptions(bringToFront = T)
              )
+
+```
+
+```{r}
+#| label: fig-interactive-CHSA-plotly
+#| fig-cap: CHSA and hospital map
+#| warning: false
+
+# # try plotly
+# fig_plotly <- chsa %>% 
+#   ## scaled pop for alpha throws error -- why?
+#   mutate(pop_scaled = CHSA_Pop16 / max(CHSA_Pop16)) %>% 
+#   ggplot(data = .) +
+#   geom_sf(aes(fill = HA_Name)) +
+#   theme_minimal() +
+#   labs(fill = 'Health Authority', alpha = 'Population') +
+#   scale_fill_brewer(palette = 'Dark2')
+# 
+# ggplotly(fig_plotly)
 
 ```
 
